@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>coffeefnatics</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="addBrew.css" />
+  </head>
+  <body>
+    <main>
+      <h1>My Favorite Brews</h1>
+      <p>Use this page to store your favoite coffee recipies</p>
+      <button type="button">Click here to add a new brew</button>
+      <div class="flex flex-column">
+        <div hidden id="coffe-brews"></div>
+      </div>
+    </main>
+    <div id="overlay">
+      <div class="textbox">
+        <form action="addBrew.js">
+          <fieldset>
+            <caption>
+              Method Used:
+            </caption>
+            <select name="method" id="method">
+              <option value="French Press">French Press</option>
+              <option value="Chemex">Chemex</option>
+              <option value="Espresso">Espresso</option>
+              <option value="Other Pour Over">Other Pour Over</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <caption>
+              Coffee to Water Ratio:
+            </caption>
+            <div class="flex justify-start">
+              <label for="coffee">Coffee Grounds</label>
+              <input type="number" name="coffee" id="coffee" />
+              <select name="units" class="units">
+                <option value="g">g</option>
+                <option value="oz">oz</option>
+                <option value="cups">cups</option>
+              </select>
+            </div>
+            <div class="flex">
+              <label for="water">Water</label>
+              <input type="number" name="water" id="water" />
+              <select name="units" class="units">
+                <option value="g">g</option>
+                <option value="oz">oz</option>
+                <option value="cups">cups</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="form-check">
+            <caption>
+              Additions
+            </caption>
+            <div class="flex">
+              <label for="additions">Milk</label>
+              <input type="checkbox" name="additions" id="milk" value="milk" />
+              <label for="additions">Cream</label>
+              <input
+                type="checkbox"
+                name="additions"
+                id="cream"
+                value="cream"
+              />
+              <label for="additions">Sugar</label>
+              <input
+                type="checkbox"
+                name="additions"
+                id="sugar"
+                value="suagr"
+              />
+              <label for="additions">Flavoring</label>
+              <input
+                type="checkbox"
+                name="additions"
+                id="flavoring"
+                value="flavoring"
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <caption for="notes">
+              Other notes
+            </caption>
+            <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="addBrew.js"></script>
+</html>
