@@ -1,4 +1,4 @@
-* {
+:root {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,6 +6,8 @@
   --lgtbrown: #c36a2d;
   --tan: #e2c275;
   --cream: #eef5d5;
+  background-color: var(--brown);
+  font-size: 62.5%;
 }
 
 /* Generalized stypes for positioning */
@@ -44,29 +46,19 @@
 .flex-column {
   flex-direction: column;
 }
-
-/* nav bar styling s */
-nav {
-  border-bottom: 5px solid black;
-  margin: auto;
-  margin-bottom: 15px;
-  padding: 10px;
-}
-
-h1 {
-  background-image: url("./seasons.jpg");
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 5px 0px rgb(0, 0, 0, 0.5);
-}
-a {
-  color: black;
+nav > * {
+  font-size: 2rem;
+  padding-top: 5vh;
+  margin-top: 2vh;
   text-decoration: none;
+  color: var(--tan);
+  font-family: "Comfortaa";
 }
-
-#nav-links {
-  width: 45%;
+nav > h1 {
+  font-family: Rancho;
+  font-size: 3rem;
+  border: 3px solid var(--tan);
+  background-color: var(--cream);
+  border-radius: 50%;
+  padding: 18px;
 }
-
-/* Season box styling */

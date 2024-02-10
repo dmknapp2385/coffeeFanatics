@@ -12,7 +12,7 @@
 .textbox {
   border: 3px;
   width: 50vw;
-  height: 400px;
+  height: fit-content;
   background-color: var(--tan);
   border-color: black;
   border-radius: 6px;
@@ -25,13 +25,15 @@
 form {
   margin-top: 5px;
   margin-bottom: 5px;
+  padding: 5px;
   border: none;
 }
-form > fieldset {
+fieldset {
   border: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: 12px;
 }
 
 input,
@@ -43,21 +45,78 @@ select {
   box-shadow: inset;
   background-color: var(--cream);
 }
+
 label,
 fieldset {
   color: var(--brown);
   font-size: 23px;
 }
 
-#exit-btn {
-  border: 5px solid brown;
-  background-color: rgb(226, 212, 121);
+label,
+input,
+.units,
+#method {
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+#method,
+.units {
+  width: fit-content;
+}
+
+input[type="number"] {
+  width: 3rem;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+input[type="checkbox"] {
+  margin-left: 3px;
+  margin-right: 6px;
+}
+#exit-btn,
+#add-btn {
+  border: 2px solid var(--brown);
+  background-color: var(--tan);
   border-radius: 5px;
   font-size: 1.5rem;
   font-weight: 200;
+  padding: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: max-content;
+  align-self: flex-end;
 }
 
-#exit-btn:hover {
+#add-btn {
+  align-self: center;
+}
+
+#exit-btn:hover,
+#add-btn:hover {
   border-color: white;
   border-width: 6px;
+}
+
+/* Main page layout */
+header h1 {
+  text-align: center;
+  color: var(--cream);
+  margin-bottom: 0;
+}
+h2 {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+#form-btn {
+  border: 4px outset var(--tan);
+  border-radius: 3px;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3rem;
+}
+
+#form-btn:hover {
+  border: 3px inset var(--tan);
 }

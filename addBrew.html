@@ -6,46 +6,49 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="addBrew.css" />
   </head>
-  <body>
-    <main>
+  <body class="flex flex-column">
+    <header>
       <h1>My Favorite Brews</h1>
-      <p>Use this page to store your favoite coffee recipies</p>
-      <button type="button">Click here to add a new brew</button>
+    </header>
+    <main class="flex flex-column align-center">
+      <h2>Use this page to store your favoite coffee recipies</h2>
+      <button type="button" id="form-btn">Click here to add a new brew</button>
       <div class="flex flex-column">
         <div hidden id="coffe-brews"></div>
       </div>
     </main>
-    <div id="overlay">
+    <div hidden id="overlay">
       <div class="textbox">
-        <form action="addBrew.js">
+        <form class="flex flex-column" action="addBrew.js">
+          <button type="button" id="exit-btn">X</button>
           <fieldset>
-            <caption>
-              Method Used:
-            </caption>
+            <legend>Method Used:</legend>
             <select name="method" id="method">
               <option value="French Press">French Press</option>
               <option value="Chemex">Chemex</option>
               <option value="Espresso">Espresso</option>
               <option value="Other Pour Over">Other Pour Over</option>
             </select>
+            <div hidden id="grind_div">
+              <label for="grind_size">Grind Size:</label>
+              <input type="number" name="grind_size" id="grind_size" />
+            </div>
           </fieldset>
           <fieldset>
-            <caption>
-              Coffee to Water Ratio:
-            </caption>
+            <legend>Coffee to Water Ratio:</legend>
             <div class="flex justify-start">
-              <label for="coffee">Coffee Grounds</label>
+              <label for="coffee">Coffee Grounds: </label>
               <input type="number" name="coffee" id="coffee" />
-              <select name="units" class="units">
+              <select name="units" id="cofUnits" class="units">
                 <option value="g">g</option>
                 <option value="oz">oz</option>
                 <option value="cups">cups</option>
               </select>
             </div>
             <div class="flex">
-              <label for="water">Water</label>
+              <label for="water">Water: </label>
               <input type="number" name="water" id="water" />
-              <select name="units" class="units">
+              <select name="units" id="waterUnits" class="units">
                 <option value="g">g</option>
                 <option value="oz">oz</option>
                 <option value="cups">cups</option>
@@ -53,27 +56,25 @@
             </div>
           </fieldset>
           <fieldset class="form-check">
-            <caption>
-              Additions
-            </caption>
+            <legend>Additions</legend>
             <div class="flex">
-              <label for="additions">Milk</label>
+              <label for="milk">Milk</label>
               <input type="checkbox" name="additions" id="milk" value="milk" />
-              <label for="additions">Cream</label>
+              <label for="cream">Cream</label>
               <input
                 type="checkbox"
                 name="additions"
                 id="cream"
                 value="cream"
               />
-              <label for="additions">Sugar</label>
+              <label for="sugar">Sugar</label>
               <input
                 type="checkbox"
                 name="additions"
                 id="sugar"
-                value="suagr"
+                value="sugar"
               />
-              <label for="additions">Flavoring</label>
+              <label for="flavoring">Flavoring</label>
               <input
                 type="checkbox"
                 name="additions"
@@ -83,11 +84,10 @@
             </div>
           </fieldset>
           <fieldset>
-            <caption for="notes">
-              Other notes
-            </caption>
+            <legend for="notes">Other notes:</legend>
             <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
           </fieldset>
+          <input type="button" id="add-btn" value="add" />
         </form>
       </div>
     </div>
