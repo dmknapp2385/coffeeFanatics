@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   --brown: #6c3428;
-  --lgtbrown: #c36a2d;
+  --lgtbrown: #9a623d;
   --tan: #e2c275;
   --cream: #eef5d5;
   background-color: var(--brown);
@@ -46,19 +46,34 @@
 .flex-column {
   flex-direction: column;
 }
-nav > * {
+
+#menu {
+  width: 80vw;
+}
+
+#menu > * {
   font-size: 2rem;
-  padding-top: 5vh;
+  padding-top: 9vh;
   margin-top: 2vh;
   text-decoration: none;
   color: var(--tan);
   font-family: "Comfortaa";
 }
-nav > h1 {
+
+#logo {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  margin-left: 2.5vw;
+}
+
+#logo > h1 {
   font-family: Rancho;
   font-size: 3rem;
+  margin: 0px;
   border: 3px solid var(--tan);
   background-color: var(--cream);
   border-radius: 50%;
-  padding: 18px;
+  padding: 2rem;
+  color: var(--tan);
 }
