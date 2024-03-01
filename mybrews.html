@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>coffeefnatics</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="myBrews.css" />
@@ -11,7 +12,7 @@
     />
   </head>
   <body onload="printBrews()">
-    <nav class="flex space-between">
+    <!-- <nav class="flex space-between">
       <a id="logo" href="index.html"> <h1>CoffeeFanatics</h1> </a>
       <div id="menu" class="flex space-evenly">
         <a href="index.html">Home</a>
@@ -30,24 +31,23 @@
     </nav>
     <header>
       <h1>My Favorite Brews</h1>
-    </header>
+    </header> -->
     <main class="flex flex-column align-center">
       <h2>Use this page to store your favoite coffee recipies</h2>
       <button type="button" id="form-btn">Click here to add a new brew</button>
-      <div id="list-div" class="flex flex-column">
-        <div id="coffee-brews" class="flex space-around">
-          <h2>Technique</h2>
-          <h2>Coffee</h2>
-          <h2>Water</h2>
-          <h2>Grind Size</h2>
-          <h2>Additions</h2>
-          <h2>Notes</h2>
+      <div id="container" class="container">
+        <h2>Technique</h2>
+        <h2>Coffee</h2>
+        <h2>Water</h2>
+        <h2>Grind Size</h2>
+        <h2>Additions</h2>
+        <h2>Notes</h2>
         </div>
       </div>
     </main>
     <div hidden id="overlay">
       <div class="textbox">
-        <form class="flex flex-column" action="addBrew.js">
+        <form action="addBrew.js">
           <button type="button" id="exit-btn">X</button>
           <fieldset>
             <legend>Method Used:</legend>
@@ -64,51 +64,55 @@
           </fieldset>
           <fieldset>
             <legend>Coffee to Water Ratio:</legend>
-            <div class="flex justify-start">
+            <div class="media-ratio">
               <label for="coffee">Coffee Grounds: </label>
-              <input type="number" name="coffee" id="coffee" />
-              <select name="units" id="cofUnits" class="units">
-                <option value="g">g</option>
-                <option value="oz">oz</option>
-                <option value="cups">cups</option>
-              </select>
+              <div>
+                <input type="number" name="coffee" id="coffee" />
+                <select name="units" id="cofUnits" class="units">
+                  <option value="g">g</option>
+                  <option value="oz">oz</option>
+                  <option value="cups">cups</option>
+                </select>
+              </div>
             </div>
-            <div class="flex">
+            <div class="media-ratio">
               <label for="water">Water: </label>
-              <input type="number" name="water" id="water" />
-              <select name="units" id="waterUnits" class="units">
-                <option value="g">g</option>
-                <option value="oz">oz</option>
-                <option value="cups">cups</option>
-              </select>
+              <div>
+                <input type="number" name="water" id="water" />
+                <select name="units" id="waterUnits" class="units">
+                  <option value="g">g</option>
+                  <option value="oz">oz</option>
+                  <option value="cups">cups</option>
+                </select>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form-check">
-            <legend>Additions</legend>
-            <div class="flex">
-              <label for="milk">Milk</label>
+            <legend>Additions:</legend>
+            <div>
               <input type="checkbox" name="additions" id="milk" value="milk" />
-              <label for="cream">Cream</label>
+              <label for="milk">Milk</label>
               <input
                 type="checkbox"
                 name="additions"
                 id="cream"
                 value="cream"
               />
-              <label for="sugar">Sugar</label>
+              <label for="cream">Cream</label>
               <input
                 type="checkbox"
                 name="additions"
                 id="sugar"
                 value="sugar"
               />
-              <label for="flavoring">Flavoring</label>
+              <label for="sugar">Sugar</label>
               <input
                 type="checkbox"
                 name="additions"
                 id="flavoring"
                 value="flavoring"
               />
+              <label for="flavoring">Flavoring</label>
             </div>
           </fieldset>
           <fieldset>

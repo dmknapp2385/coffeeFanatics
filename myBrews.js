@@ -22,7 +22,7 @@ const grindSize = document.getElementById("grind_size");
 const formBox = document.getElementsByClassName("textbox");
 
 //Element Variables for main
-const listDiv = document.getElementById("list-div");
+const listDiv = document.getElementById("container");
 
 //add input from form to local storage array
 function addBrew() {
@@ -44,6 +44,10 @@ function addBrew() {
   location.reload();
 }
 
+// TODO: CHANGE THIS. make it just h3 under dive containter
+// then use container as grid
+//grid template columns: column widths here
+//will auto wrap need it to be nested grids as need to delete entire rows
 function printBrews() {
   brewArray.forEach((brew, index) => {
     var row = document.createElement("div");
@@ -94,8 +98,11 @@ function exitForm() {
 
 //Display grind input if Espresso chosen on form
 function showGrind() {
-  if ((method.value = "Espresso")) {
+  var x = method.value;
+  if (x == "Espresso") {
     grindDiv.hidden = false;
+  } else {
+    grindDiv.hidden = true;
   }
 }
 
