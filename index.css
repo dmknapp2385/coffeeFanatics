@@ -84,6 +84,39 @@ nav {
   font-family: var(--headers);
 }
 
+/* methods dropdown styling */
+
+nav ul {
+  margin-top: 0px;
+  background-color: var(--cream);
+  padding-inline: 0.5em;
+}
+li {
+  display: block;
+  list-style-type: none;
+}
+li > a:hover {
+  width: 100%;
+  color: var(--tan);
+}
+
+li > a {
+  color: var(--lgtbrown);
+  font-size: 2.1vw;
+  text-decoration: none;
+}
+
+#menu > div {
+  cursor: pointer;
+}
+#menu > div:hover {
+  color: var(--lgtbrown);
+  background-color: var(--cream);
+}
+#menu > a:hover {
+  color: var(--lgtbrown);
+}
+
 #logo {
   margin: 0px;
   padding: 0px;
