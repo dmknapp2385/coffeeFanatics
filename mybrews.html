@@ -12,10 +12,11 @@
     />
   </head>
   <body onload="printBrews()">
-    <!-- <nav class="flex space-between">
+    <nav class="flex space-between">
       <a id="logo" href="index.html"> <h1>CoffeeFanatics</h1> </a>
-      <div id="menu" class="flex space-evenly">
+      <div id="menu" class="flex row-wrap">
         <a href="index.html">Home</a>
+        <a href="beans.html">Beans</a>
         <div id="methodoligies">
           Brewing Techniques
           <ul hidden>
@@ -24,24 +25,24 @@
             <li><a href="pourOvers.html">Pour Overs</a></li>
           </ul>
         </div>
-        <a href="addBrew.html">My Brews</a>
-        <a href="beans.html">Beans</a>
         <a href="local.html">Local Cafes</a>
+        <a href="addBrew.html">My Brews</a>
       </div>
     </nav>
     <header>
       <h1>My Favorite Brews</h1>
-    </header> -->
+    </header>
     <main class="flex flex-column align-center">
       <h2>Use this page to store your favoite coffee recipies</h2>
-      <button type="button" id="form-btn">Click here to add a new brew</button>
+      <button type="button" id="form-btn">add a new brew</button>
       <div id="container" class="container">
-        <h2>Technique</h2>
-        <h2>Coffee</h2>
-        <h2>Water</h2>
-        <h2>Grind Size</h2>
-        <h2>Additions</h2>
-        <h2>Notes</h2>
+        <div>
+          <h2>Technique</h2>
+          <h2>Coffee</h2>
+          <h2>Water</h2>
+          <h2>Grind Size</h2>
+          <h2>Additions</h2>
+          <h2>Notes</h2>
         </div>
       </div>
     </main>
@@ -69,6 +70,7 @@
               <div>
                 <input type="number" name="coffee" id="coffee" />
                 <select name="units" id="cofUnits" class="units">
+                  <option></option>
                   <option value="g">g</option>
                   <option value="oz">oz</option>
                   <option value="cups">cups</option>
@@ -80,6 +82,8 @@
               <div>
                 <input type="number" name="water" id="water" />
                 <select name="units" id="waterUnits" class="units">
+                  <option></option>
+
                   <option value="g">g</option>
                   <option value="oz">oz</option>
                   <option value="cups">cups</option>

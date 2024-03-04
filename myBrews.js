@@ -32,10 +32,10 @@ function addBrew() {
     water: water.value,
     coffeeUnits: coffeeUnits.value,
     waterUnits: waterUnits.value,
-    cream: cream.value,
-    milk: milk.value,
-    sugar: sugar.value,
-    flavor: flavor.value,
+    cream: cream.checked,
+    milk: milk.checked,
+    sugar: sugar.checked,
+    flavor: flavor.checked,
     notes: notes.value,
     grindSize: grindSize.value,
   };
@@ -50,6 +50,7 @@ function addBrew() {
 //will auto wrap need it to be nested grids as need to delete entire rows
 function printBrews() {
   brewArray.forEach((brew, index) => {
+    console.log(brew);
     var row = document.createElement("div");
     row.setAttribute("name", `${index}`);
     var element = document.createElement("h3");
@@ -72,11 +73,34 @@ function printBrews() {
     var grindEleText = document.createTextNode(brew.grindSize);
     grindElement.appendChild(grindEleText);
     row.appendChild(grindElement);
+
+    // list elements
     var additionsElement = document.createElement("ul");
-    var listElement = document.createElement("li");
-    var listText = document.createTextNode(brew.cream);
-    listElement.appendChild(listText);
-    additionsElement.appendChild(listElement);
+    if (brew.cream) {
+      var listElement = document.createElement("li");
+      var listText = document.createTextNode(cream.value);
+      listElement.appendChild(listText);
+      additionsElement.appendChild(listElement);
+    }
+    if (brew.milk) {
+      var listElement = document.createElement("li");
+      var listText = document.createTextNode(milk.value);
+      listElement.appendChild(listText);
+      additionsElement.appendChild(listElement);
+    }
+    if (brew.sugar) {
+      var listElement = document.createElement("li");
+      var listText = document.createTextNode(sugar.value);
+      listElement.appendChild(listText);
+      additionsElement.appendChild(listElement);
+    }
+    if (brew.flavor) {
+      var listElement = document.createElement("li");
+      var listText = document.createTextNode(flavor.value);
+      listElement.appendChild(listText);
+      additionsElement.appendChild(listElement);
+    }
+
     row.appendChild(additionsElement);
     var noteElement = document.createElement("p");
     var noteEleText = document.createTextNode(brew.notes);

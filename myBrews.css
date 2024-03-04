@@ -3,22 +3,41 @@ header h1 {
   text-align: center;
   color: var(--tan);
   margin-bottom: 0;
-  font-size: 2.7rem;
-  font-family: "Comfortaa";
+  font-size: 2.6vw;
+  line-height: 1.5em;
+  font-family: "Rancho";
 }
-h2 {
+
+main > h2 {
   margin-top: 5px;
-  font-size: 2.3rem;
-  font-style: italic;
-  font-family: Comfortaa;
+  font-size: 2.1vw;
+  text-align: center;
   color: var(--lgtbrown);
+}
+h3 {
+  font-size: 1.9vw;
 }
 
 .container {
-  /* change js to be just multiple h3 under grid container */
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 3px;
+  padding-left: 10px;
+  color: var(--cream);
+}
+
+.container > div {
   display: grid;
-  grid-template-columns: repeat(6, 1fr) 2fr;
+  grid-template-columns: repeat(5, 1fr) 2fr;
   grid-template-rows: 1fr;
+  gap: 10px;
+}
+.container li {
+  list-style-type: none;
+}
+.container h2 {
+  text-align: left;
 }
 
 /* List of Brew */
@@ -35,11 +54,11 @@ h2 {
 
 #form-btn {
   border: 4px outset var(--tan);
-  border-radius: 3px;
+  border-radius: 12px;
   padding: 10px;
   font-family: Comfortaa;
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 1.3rem;
   background-color: var(--lgtbrown);
   color: var(--cream);
 }
@@ -58,8 +77,7 @@ h2 {
   height: 100%;
   width: 100%;
   background-color: rgb(0, 0, 0, 0.5);
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 .textbox {
   border: 3px;
@@ -172,6 +190,7 @@ input[type="checkbox"]:checked + label::before {
   width: fit-content;
   align-self: flex-end;
   color: var(--brown);
+  font-size: 1.3rem;
 }
 
 #add-btn {
@@ -186,17 +205,18 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media only screen and (max-width: 700px) {
+  main {
+    overflow: hidden;
+  }
   .textbox {
-    min-width: 89vw;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 98vw;
+    margin-top: 0px;
   }
-  /* .media-ratio {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+  form {
+    padding-left: 5px;
+    padding-right: 8px;
   }
-  .form-check > div {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-  } */
 }
