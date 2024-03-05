@@ -2,11 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --brown: #2c1712;
+  --burlywood: #DEB887;
   --lgtbrown: #683c2b;
-  --tan: #f0d89f;
+  --brown: #2c1712;
   --cream: #fffdd0;
-  background-color: var(--brown);
+  background-color: var(--burlywood);
   --logo: "Comfortaa", "Gill Sans", "Gill Sans MT", sans-serif;
   --headers: "Rancho", sans-serif;
   --body: ;
@@ -80,7 +80,7 @@ nav {
   font-size: 2.6vw;
   padding-right: 2.4rem;
   text-decoration: none;
-  color: var(--tan);
+  color: var(--brown);
   font-family: var(--headers);
 }
 
@@ -97,7 +97,7 @@ li {
 }
 li > a:hover {
   width: 100%;
-  color: var(--tan);
+  color: var(--brown);
 }
 
 li > a {
@@ -111,7 +111,6 @@ li > a {
 }
 #menu > div:hover {
   color: var(--lgtbrown);
-  background-color: var(--cream);
 }
 #menu > a:hover {
   color: var(--lgtbrown);
@@ -128,11 +127,11 @@ li > a {
   font-family: var(--headers);
   font-size: 2.5vw;
   margin: 0px;
-  border: 3px solid var(--tan);
+  border: 3px solid var(--burlywood);
   background-color: var(--cream);
   border-radius: 50%;
   padding: 10px;
-  color: var(--brown);
+  color: var(--burlywood);
   text-align: center;
 }
 footer {
