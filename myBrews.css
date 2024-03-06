@@ -1,22 +1,4 @@
 /* Main page layout */
-header h1 {
-  text-align: center;
-  color: var(--tan);
-  margin-bottom: 0;
-  font-size: 2.6vw;
-  line-height: 1.5em;
-  font-family: "Rancho";
-}
-
-main > h2 {
-  margin-top: 5px;
-  font-size: 2.1vw;
-  text-align: center;
-  color: var(--lgtbrown);
-}
-h3 {
-  font-size: 1.9vw;
-}
 
 .container {
   display: flex;
@@ -25,6 +7,7 @@ h3 {
   padding: 3px;
   padding-left: 10px;
   color: var(--cream);
+  min-width: 88vw;
 }
 
 .container > div {
@@ -33,23 +16,15 @@ h3 {
   grid-template-rows: 1fr;
   gap: 10px;
 }
+.container > * {
+  border-bottom: 1px solid var(--cream);
+}
 .container li {
   list-style-type: none;
 }
 .container h2 {
   text-align: left;
-}
-
-/* List of Brew */
-#list-div {
-  width: 90vw;
-  margin: auto;
-  margin-top: 5vh;
-}
-
-#list-div > div {
-  display: flex;
-  justify-content: space-around;
+  font-size: 2rem;
 }
 
 #form-btn {
@@ -209,11 +184,12 @@ input[type="checkbox"]:checked + label::before {
     overflow: hidden;
   }
   .textbox {
-    position: fixed;
+    position: absolute;
     left: 0px;
     top: 0px;
     width: 98vw;
     margin-top: 0px;
+    border-radius: 0px;
   }
   form {
     padding-left: 5px;
