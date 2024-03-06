@@ -1,0 +1,40 @@
+img {
+  max-width: 100%;
+}
+
+.fav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.stacked {
+  display: grid;
+}
+.stacked > * {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.card {
+  aspect-ratio: 1/1.5;
+}
+.card_title,
+.card_description {
+  color: var(--cream);
+}
+
+.card_img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.card_content {
+  background: var(--lgtbrown);
+  align-self: end;
+  margin: 0 0.5rem 0.5rem;
+  box-sizing: 0 0.5rem 2 rgba(252, 7, 7, 0.5);
+  padding: 0 0.5rem;
+  border-radius: 5px;
+}
+
+.card {
+  border: 2px solid blue;
+}
