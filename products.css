@@ -1,10 +1,14 @@
 img {
   max-width: 100%;
 }
-
+.container {
+  width: 89vw;
+  margin: auto;
+}
 .fav-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 .stacked {
   display: grid;
@@ -15,13 +19,18 @@ img {
 }
 .card {
   aspect-ratio: 1/1.5;
+  margin-bottom: 0.5rem;
 }
 .card_title,
 .card_description {
   color: var(--cream);
+  font-size: 1rem;
+}
+.card_title {
+  text-align: center;
 }
 
-.card_img {
+.card_image {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -30,11 +39,26 @@ img {
   background: var(--lgtbrown);
   align-self: end;
   margin: 0 0.5rem 0.5rem;
-  box-sizing: 0 0.5rem 2 rgba(252, 7, 7, 0.5);
   padding: 0 0.5rem;
   border-radius: 5px;
 }
+.card.blank {
+  display: none;
+}
 
-.card {
-  border: 2px solid blue;
+@media (min-width: 500px) {
+  .card.featured {
+    grid-column: span 2;
+    aspect-ratio: 1/0.65;
+  }
+
+  .card.featured > .card_image {
+    aspect-ratio: 1/0.5;
+  }
+}
+
+@media (min-width: 881px) {
+  .card.blank {
+    display: inline;
+  }
 }
