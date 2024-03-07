@@ -43,14 +43,11 @@ function addBrew() {
   localStorage.setItem("brews", JSON.stringify(brewArray));
   location.reload();
 }
+function addEmpty() {
 
-// TODO: CHANGE THIS. make it just h3 under dive containter
-// then use container as grid
-//grid template columns: column widths here
-//will auto wrap need it to be nested grids as need to delete entire rows
+}
 function printBrews() {
   brewArray.forEach((brew, index) => {
-    console.log(brew);
     var row = document.createElement("div");
     row.setAttribute("name", `${index}`);
     var element = document.createElement("h3");
@@ -58,9 +55,14 @@ function printBrews() {
     element.appendChild(elementText);
     row.appendChild(element);
     var coffeeElement = document.createElement("h3");
-    var coffeeEleText = document.createTextNode(
-      `${brew.coffee} ${brew.coffeeUnits}`
-    );
+    if (brew.coffee != "") {
+      var coffeeEleText = document.createTextNode(
+        `${brew.coffee} ${brew.coffeeUnits}`
+      );
+    } else {
+      var coffeeEleText = document.createTextNode(`---`);
+    }
+
     coffeeElement.appendChild(coffeeEleText);
     row.appendChild(coffeeElement);
     var waterElement = document.createElement("h3");

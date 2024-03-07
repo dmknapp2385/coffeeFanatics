@@ -1,7 +1,4 @@
 :root {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   --brown: #2c1712;
   --lgtbrown: #683c2b;
   --tan: #f0d89f;
@@ -10,6 +7,11 @@
   --logo: "Comfortaa", "Gill Sans", "Gill Sans MT", sans-serif;
   --headers: "Rancho", sans-serif;
   --body: ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Generalized stypes for positioning */
@@ -57,28 +59,26 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  padding-bottom: 2.5rem;
-  padding-top: 5rem;
-  position: relative;
+  min-height: 100vh;
+  /* min-width: 100vw;
+  padding-top: 3rem; */
+  /* position: relative; */
 }
 
+/* Nav styling */
 nav {
-  position: absolute;
-  top: 0px;
-  left: 0px;
   margin-bottom: 15px;
-  width: 98vw;
+  padding: 10px 5px;
+  width: 100%;
 }
 #menu {
-  margin-top: 10px;
   flex-basis: 70%;
   justify-content: flex-end;
 }
 
 #menu > * {
   font-size: 2.6vw;
-  padding-right: 2.4rem;
+  padding-right: 1.8rem;
   text-decoration: none;
   color: var(--tan);
   font-family: var(--headers);
@@ -121,7 +121,7 @@ li > a {
   margin: 0px;
   padding: 0px;
   text-decoration: none;
-  margin-left: 1vw;
+  margin-left: 1.5vw;
 }
 
 #logo > h1 {
@@ -135,13 +135,38 @@ li > a {
   color: var(--brown);
   text-align: center;
 }
-footer {
-  padding: 10px;
-  height: 2.5rem;
-  position: absolute;
-  bottom: -5px;
-  left: -10px;
-  right: -10px;
 
+/* main Styling */
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: var(--headers);
+  font-size: 2rem;
+  color: var(--lgtbrown);
+}
+h2 {
+  font-size: 1.8rem;
+  color: var(--tan);
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: var(--body);
+  color: var(--tan);
+}
+
+a {
+  text-decoration: none;
+}
+footer {
+  height: 3rem;
+  min-width: 100%;
+  margin-top: auto;
   background-color: var(--lgtbrown);
 }
