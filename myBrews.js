@@ -43,17 +43,19 @@ function addBrew() {
   localStorage.setItem("brews", JSON.stringify(brewArray));
   location.reload();
 }
-function addEmpty() {
-
-}
+function addEmpty() {}
 function printBrews() {
   brewArray.forEach((brew, index) => {
     var row = document.createElement("div");
     row.setAttribute("name", `${index}`);
+
+    //Method
     var element = document.createElement("h3");
     var elementText = document.createTextNode(brew.technique);
     element.appendChild(elementText);
     row.appendChild(element);
+
+    //Coffee Grounds
     var coffeeElement = document.createElement("h3");
     if (brew.coffee != "") {
       var coffeeEleText = document.createTextNode(
@@ -62,17 +64,28 @@ function printBrews() {
     } else {
       var coffeeEleText = document.createTextNode(`---`);
     }
-
     coffeeElement.appendChild(coffeeEleText);
     row.appendChild(coffeeElement);
+
+    //Water amount
+    if (brew.water != "") {
+      var waterEleText = document.createTextNode(
+        `${brew.water} ${brew.waterUnits}`
+      );
+    } else {
+      var waterEleText = document.createTextNode(`---`);
+    }
     var waterElement = document.createElement("h3");
-    var waterEleText = document.createTextNode(
-      `${brew.water} ${brew.waterUnits}`
-    );
     waterElement.appendChild(waterEleText);
     row.appendChild(waterElement);
+
+    //Grind Size
     var grindElement = document.createElement("h3");
-    var grindEleText = document.createTextNode(brew.grindSize);
+    if (brew.grindSize != "") {
+      var grindEleText = document.createTextNode(brew.grindSize);
+    } else {
+      var grindEleText = document.createTextNode(`---`);
+    }
     grindElement.appendChild(grindEleText);
     row.appendChild(grindElement);
 
@@ -102,8 +115,9 @@ function printBrews() {
       listElement.appendChild(listText);
       additionsElement.appendChild(listElement);
     }
-
     row.appendChild(additionsElement);
+
+    //Notes
     var noteElement = document.createElement("p");
     var noteEleText = document.createTextNode(brew.notes);
     noteElement.appendChild(noteEleText);
