@@ -1,9 +1,6 @@
-main {
-  margin-top: 15px;
-}
-
 img {
   max-width: 100%;
+  border-radius: 5px;
 }
 .container {
   width: 89vw;
@@ -43,7 +40,7 @@ img {
   object-fit: cover;
 }
 .card_content {
-  background: var(--lgtbrown);
+  /* background: var(--lgtbrown); */
   align-self: end;
   margin: 0.5rem 0.5rem 0.5rem;
   padding: 0 0.5rem;
