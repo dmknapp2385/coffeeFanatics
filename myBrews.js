@@ -1,6 +1,5 @@
 // global variables
-var brewArray = JSON.parse(localStorage.getItem("brews")) || [];
-console.log(brewArray);
+let brewArray = JSON.parse(localStorage.getItem("brews")) || [];
 
 // Element variables for Form
 const addButton = document.getElementById("add-btn");
@@ -26,7 +25,7 @@ const listDiv = document.getElementById("container");
 
 //add input from form to local storage array
 function addBrew() {
-  var brew = {
+  let brew = {
     technique: method.value,
     coffee: coffeeGrounds.value,
     water: water.value,
@@ -43,87 +42,99 @@ function addBrew() {
   localStorage.setItem("brews", JSON.stringify(brewArray));
   location.reload();
 }
-function addEmpty() {}
+
+//print saved brews on main page
 function printBrews() {
   brewArray.forEach((brew, index) => {
-    var row = document.createElement("div");
+    let row = document.createElement("div");
     row.setAttribute("name", `${index}`);
 
-    //Method
-    var element = document.createElement("h3");
-    var elementText = document.createTextNode(brew.technique);
-    element.appendChild(elementText);
+    //Method and delete span
+    let element = document.createElement("h3");
+    element.innerHTML = `<span>&#x1F5D1<span> ${brew.technique}`;
+    // let elementText = document.createTextNode(spanText + brew.technique);
     row.appendChild(element);
 
     //Coffee Grounds
-    var coffeeElement = document.createElement("h3");
+    let coffeeElement = document.createElement("h3");
+    let coffeeEleText;
     if (brew.coffee != "") {
-      var coffeeEleText = document.createTextNode(
+      coffeeEleText = document.createTextNode(
         `${brew.coffee} ${brew.coffeeUnits}`
       );
     } else {
-      var coffeeEleText = document.createTextNode(`---`);
+      coffeeEleText = document.createTextNode(`---`);
     }
     coffeeElement.appendChild(coffeeEleText);
     row.appendChild(coffeeElement);
 
     //Water amount
+    let waterEleText;
     if (brew.water != "") {
-      var waterEleText = document.createTextNode(
+      waterEleText = document.createTextNode(
         `${brew.water} ${brew.waterUnits}`
       );
     } else {
-      var waterEleText = document.createTextNode(`---`);
+      waterEleText = document.createTextNode(`---`);
     }
-    var waterElement = document.createElement("h3");
+    let waterElement = document.createElement("h3");
     waterElement.appendChild(waterEleText);
     row.appendChild(waterElement);
 
     //Grind Size
-    var grindElement = document.createElement("h3");
+    let grindElement = document.createElement("h3");
+    let grindEleText;
     if (brew.grindSize != "") {
-      var grindEleText = document.createTextNode(brew.grindSize);
+      grindEleText = document.createTextNode(brew.grindSize);
     } else {
-      var grindEleText = document.createTextNode(`---`);
+      grindEleText = document.createTextNode(`---`);
     }
     grindElement.appendChild(grindEleText);
     row.appendChild(grindElement);
 
     // list elements
-    var additionsElement = document.createElement("ul");
+
+    let additionsElement = document.createElement("ul");
+
     if (brew.cream) {
-      var listElement = document.createElement("li");
-      var listText = document.createTextNode(cream.value);
+      let listElement = document.createElement("li");
+      let listText = document.createTextNode(cream.value);
       listElement.appendChild(listText);
       additionsElement.appendChild(listElement);
     }
     if (brew.milk) {
-      var listElement = document.createElement("li");
-      var listText = document.createTextNode(milk.value);
+      let listElement = document.createElement("li");
+      let listText = document.createTextNode(milk.value);
       listElement.appendChild(listText);
       additionsElement.appendChild(listElement);
     }
     if (brew.sugar) {
-      var listElement = document.createElement("li");
-      var listText = document.createTextNode(sugar.value);
+      let listElement = document.createElement("li");
+      let listText = document.createTextNode(sugar.value);
       listElement.appendChild(listText);
       additionsElement.appendChild(listElement);
     }
     if (brew.flavor) {
-      var listElement = document.createElement("li");
-      var listText = document.createTextNode(flavor.value);
+      let listElement = document.createElement("li");
+      let listText = document.createTextNode(flavor.value);
       listElement.appendChild(listText);
       additionsElement.appendChild(listElement);
     }
     row.appendChild(additionsElement);
 
     //Notes
-    var noteElement = document.createElement("p");
-    var noteEleText = document.createTextNode(brew.notes);
+    let noteElement = document.createElement("p");
+    let noteEleText = document.createTextNode(brew.notes);
     noteElement.appendChild(noteEleText);
     row.appendChild(noteElement);
     listDiv.appendChild(row);
   });
+
+  // add event listeners to span
+  let spans = document.getElementsByTagName("span");
+  for (let span of spans) {
+    span.addEventListener("click", deleteBrew);
+  }
 }
 
 //show pup-up modal
@@ -138,13 +149,21 @@ function exitForm() {
 
 //Display grind input if Espresso chosen on form
 function showGrind() {
-  var x = method.value;
+  let x = method.value;
   if (x == "Espresso") {
     grindDiv.hidden = false;
   } else {
     grindDiv.hidden = true;
   }
 }
+
+const deleteBrew = (e) => {
+  let parent = e.target.closest("div");
+  let index = parent.getAttribute("name");
+  brewArray.splice(index, 1);
+  localStorage.setItem("brews", JSON.stringify(brewArray));
+  location.reload();
+};
 
 //Event Listeners
 addButton.addEventListener("click", addBrew);

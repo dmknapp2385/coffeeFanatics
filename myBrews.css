@@ -35,6 +35,10 @@
   font-size: 1.3rem;
 }
 
+.container span {
+  cursor: pointer;
+}
+
 #form-btn {
   border: 4px outset var(--tan);
   border-radius: 12px;
