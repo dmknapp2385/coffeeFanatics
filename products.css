@@ -2,6 +2,7 @@ img {
   max-width: 100%;
   border-radius: 5px;
 }
+
 .container {
   width: 89vw;
   margin: auto;
@@ -27,11 +28,13 @@ img {
 .card_title,
 .card_description {
   color: var(--cream);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: var(--body);
 }
 .card_title {
   text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
 .card_image {
