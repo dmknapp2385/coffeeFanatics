@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>coffeefnatics</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="products.css" />
+  <link rel="stylesheet" href="products.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Rancho&family=Comfortaa">
 </head>
@@ -14,7 +14,7 @@
 <body>
   <nav class="flex space-between">
     <a id="logo" href="index.html">
-      <h1>CoffeeFanatics</h1>
+      <p>CoffeeFanatics<p>
     </a>
     <div id="menu" class="flex row-wrap">
       <a href="index.html">Home</a>
@@ -40,6 +40,7 @@
     </h2>
   </header>
   <main class="flex flex-column">
+    <button hidden id="upButton" type="button">&uarr;</button>
     <div class="container">
       <h2>Espresso</h2>
       <div class="fav-grid">
@@ -268,7 +269,9 @@
     </div>
   </main>
   <footer>Footer goes here</footer>
+  <script src="main.js"></script>
+  <script src="products.js"></script>
+
 </body>
-<script src="main.js"></script>
 
 </html>
