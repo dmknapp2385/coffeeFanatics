@@ -33,6 +33,7 @@
 .space-around {
   justify-content: space-around;
 }
+
 .space-evenly {
   justify-content: space-evenly;
 }
@@ -54,6 +55,27 @@
 }
 
 /* Generalized website styling */
+
+/* Hero image */
+#hero-section {
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)),
+  url("https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600");
+  min-height: 100vh;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About section */
+
+/* Carousel */
+
+/* body section */ 
+
 body {
   display: flex;
   flex-direction: column;
@@ -61,18 +83,19 @@ body {
   padding-bottom: 2.5rem;
   padding-top: 5rem;
   position: relative;
+  background-color: var(--burlywood);
 }
 
+/*Nav section */
 nav {
   position: absolute;
   top: 0px;
   left: 0px;
-  margin-bottom: 15px;
   width: 98vw;
 }
 #menu {
-  margin-top: 10px;
-  flex-basis: 70%;
+  margin: auto;
+  flex-basis: 80%;
   justify-content: flex-end;
 }
 
@@ -85,6 +108,14 @@ nav {
 }
 
 /* methods dropdown styling */
+#arrow {
+  margin-top: 20px;
+  float: right;
+}
+
+#methodologies {
+  width: auto;
+}
 
 nav ul {
   margin-top: 0px;
@@ -98,6 +129,7 @@ li {
 li > a:hover {
   width: 100%;
   color: var(--brown);
+  background-color: var(--cream);
 }
 
 li > a {
@@ -111,6 +143,7 @@ li > a {
 }
 #menu > div:hover {
   color: var(--lgtbrown);
+  background-color: var(--cream);
 }
 #menu > a:hover {
   color: var(--lgtbrown);
@@ -135,12 +168,6 @@ li > a {
   text-align: center;
 }
 footer {
-  padding: 10px;
-  height: 2.5rem;
-  position: absolute;
-  bottom: -5px;
-  left: -10px;
-  right: -10px;
-
+  text-align: center;
   background-color: var(--lgtbrown);
 }
