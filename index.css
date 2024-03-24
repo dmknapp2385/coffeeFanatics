@@ -3,13 +3,18 @@
   margin: 0;
   padding: 0;
   --burlywood: #DEB887;
+  --brown: #2c1712;
   --lgtbrown: #683c2b;
   --brown: #2c1712;
   --cream: #fffdd0;
   background-color: var(--burlywood);
   --logo: "Comfortaa", "Gill Sans", "Gill Sans MT", sans-serif;
   --headers: "Rancho", sans-serif;
-  --body: ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Generalized stypes for positioning */
@@ -96,12 +101,27 @@ nav {
 #menu {
   margin: auto;
   flex-basis: 80%;
+  min-height: 100vh;
+  /* min-width: 100vw;
+  padding-top: 3rem; */
+  /* position: relative; */
+}
+
+/* Nav styling */
+nav {
+  margin-bottom: 15px;
+  padding: 10px 5px;
+  width: 100%;
+}
+#menu {
+  flex-basis: 85%;
   justify-content: flex-end;
+  gap: 8px;
 }
 
 #menu > * {
   font-size: 2.6vw;
-  padding-right: 2.4rem;
+  padding-right: 1.8rem;
   text-decoration: none;
   color: var(--brown);
   font-family: var(--headers);
@@ -153,10 +173,10 @@ li > a {
   margin: 0px;
   padding: 0px;
   text-decoration: none;
-  margin-left: 1vw;
+  margin-left: 1.5vw;
 }
 
-#logo > h1 {
+#logo > p {
   font-family: var(--headers);
   font-size: 2.5vw;
   margin: 0px;
@@ -169,5 +189,39 @@ li > a {
 }
 footer {
   text-align: center;
+
+/* main Styling */
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: var(--headers);
+  font-size: 2rem;
+  color: var(--lgtbrown);
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 1.8rem;
+  color: var(--tan);
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: var(--body);
+  color: var(--tan);
+}
+
+a {
+  text-decoration: none;
+}
+footer {
+  height: 3rem;
+  min-width: 100%;
+  margin-top: auto;
   background-color: var(--lgtbrown);
 }
