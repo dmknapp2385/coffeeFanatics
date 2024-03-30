@@ -1,8 +1,5 @@
 :root {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  --burlywood: #DEB887;
+  --burlywood: #deb887;
   --brown: #2c1712;
   --lgtbrown: #683c2b;
   --brown: #2c1712;
@@ -63,8 +60,8 @@
 
 /* Hero image */
 #hero-section {
-  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)),
-  url("https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600");
   min-height: 100vh;
   background-position: center, center;
   background-repeat: no-repeat;
@@ -79,29 +76,13 @@
 
 /* Carousel */
 
-/* body section */ 
+/* body section */
 
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  padding-bottom: 2.5rem;
-  padding-top: 5rem;
-  position: relative;
-  background-color: var(--burlywood);
-}
-
-/*Nav section */
-nav {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 98vw;
-}
-#menu {
-  margin: auto;
-  flex-basis: 80%;
   min-height: 100vh;
+  background-color: var(--burlywood);
 }
 
 /* Nav styling */
@@ -130,14 +111,6 @@ nav {
 }
 
 /* methods dropdown styling */
-#arrow {
-  margin-top: 20px;
-  float: right;
-}
-
-#methodologies {
-  width: auto;
-}
 
 #methodoligies {
   cursor: pointer;
@@ -147,8 +120,8 @@ nav {
 
 .dropdwn_title > span {
   transform: rotate(45deg);
-  border-right: 2px solid var(--tan);
-  border-bottom: 2px solid var(--tan);
+  border-right: 2px solid var(--brown);
+  border-bottom: 2px solid var(--brown);
   width: 1vw;
   height: 1vw;
   margin-left: 7px;
@@ -162,7 +135,7 @@ nav {
 }
 
 #methodoligies:hover {
-  color: var(--tan);
+  color: var(--brown);
   background-color: var(--lgtbrown);
 }
 
@@ -171,22 +144,20 @@ nav {
   position: absolute;
   background-color: var(--lgtbrown);
   border-radius: 0px 0px 5px 5px;
-  padding-left: 4px;
+  padding: 0px 4px 4px 4px;
   width: 100%;
-  padding-bottom: 5px;
-  padding-right: 4px;
 }
 
 .dropdwn_content > a {
   display: block;
   width: 100%;
   text-decoration: none;
-  color: var(--tan);
+  color: var(--burlywood);
 }
 
 .dropdwn_content > a:hover {
   color: var(--brown);
-  background-color: var(--tan);
+  background-color: var(--cream);
 }
 
 #methodoligies:hover .dropdwn_content {
@@ -208,16 +179,14 @@ nav {
   font-family: var(--headers);
   font-size: 2.5vw;
   margin: 0px;
-  border: 3px solid var(--burlywood);
+  border: 3px solid var(--tan);
   background-color: var(--cream);
   border-radius: 50%;
   padding: 10px;
-  color: var(--burlywood);
+  color: var(--brown);
   text-align: center;
 }
-footer {
-  text-align: center;
-}
+
 /* main Styling */
 main {
   display: flex;
