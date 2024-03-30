@@ -1,12 +1,15 @@
 :root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --burlywood: #DEB887;
   --brown: #2c1712;
   --lgtbrown: #683c2b;
-  --tan: #f0d89f;
+  --brown: #2c1712;
   --cream: #fffdd0;
-  background-color: var(--brown);
+  background-color: var(--burlywood);
   --logo: "Comfortaa", "Gill Sans", "Gill Sans MT", sans-serif;
   --headers: "Rancho", sans-serif;
-  --body: ;
 }
 * {
   margin: 0;
@@ -35,6 +38,7 @@
 .space-around {
   justify-content: space-around;
 }
+
 .space-evenly {
   justify-content: space-evenly;
 }
@@ -56,9 +60,47 @@
 }
 
 /* Generalized website styling */
+
+/* Hero image */
+#hero-section {
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)),
+  url("https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600");
+  min-height: 100vh;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About section */
+
+/* Carousel */
+
+/* body section */ 
+
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  padding-bottom: 2.5rem;
+  padding-top: 5rem;
+  position: relative;
+  background-color: var(--burlywood);
+}
+
+/*Nav section */
+nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 98vw;
+}
+#menu {
+  margin: auto;
+  flex-basis: 80%;
   min-height: 100vh;
   /* min-width: 100vw;
   padding-top: 3rem; */
@@ -81,11 +123,19 @@ nav {
   font-size: 2.6vw;
   padding-right: 1.8rem;
   text-decoration: none;
-  color: var(--tan);
+  color: var(--brown);
   font-family: var(--headers);
 }
 
 /* methods dropdown styling */
+#arrow {
+  margin-top: 20px;
+  float: right;
+}
+
+#methodologies {
+  width: auto;
+}
 
 nav ul {
   margin-top: 0px;
@@ -98,7 +148,8 @@ li {
 }
 li > a:hover {
   width: 100%;
-  color: var(--tan);
+  color: var(--brown);
+  background-color: var(--cream);
 }
 
 li > a {
@@ -129,13 +180,15 @@ li > a {
   font-family: var(--headers);
   font-size: 2.5vw;
   margin: 0px;
-  border: 3px solid var(--tan);
+  border: 3px solid var(--burlywood);
   background-color: var(--cream);
   border-radius: 50%;
   padding: 10px;
-  color: var(--brown);
+  color: var(--burlywood);
   text-align: center;
 }
+footer {
+  text-align: center;
 
 /* main Styling */
 main {
