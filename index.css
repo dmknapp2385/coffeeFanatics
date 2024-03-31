@@ -2,9 +2,7 @@
   --burlywood: #deb887;
   --brown: #2c1712;
   --lgtbrown: #683c2b;
-  --brown: #2c1712;
   --cream: #fffdd0;
-  background-color: var(--burlywood);
   --logo: "Comfortaa", "Gill Sans", "Gill Sans MT", sans-serif;
   --headers: "Rancho", sans-serif;
 }
@@ -115,7 +113,7 @@ nav {
 #methodoligies {
   cursor: pointer;
   position: relative;
-  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .dropdwn_title > span {
@@ -132,9 +130,15 @@ nav {
 
 #methodoligies:hover span {
   transform: rotate(225deg);
+  border-color: var(--cream);
 }
 
-#methodoligies:hover {
+#methodoligies:hover .dropdwn_title {
+  color: var(--cream);
+}
+
+#methodoligies:hover,
+.dropdwn_content {
   color: var(--brown);
   background-color: var(--lgtbrown);
 }
@@ -142,7 +146,6 @@ nav {
 .dropdwn_content {
   display: none;
   position: absolute;
-  background-color: var(--lgtbrown);
   border-radius: 0px 0px 5px 5px;
   padding: 0px 4px 4px 4px;
   width: 100%;
@@ -165,7 +168,7 @@ nav {
 }
 
 #menu > a:hover {
-  color: var(--lgtbrown);
+  color: var(--cream);
 }
 
 #logo {
