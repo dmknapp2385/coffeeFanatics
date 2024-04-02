@@ -1,3 +1,7 @@
+main h2 {
+  color: var(--lgtbrown);
+}
+
 #upButton {
   position: fixed;
   right: 10px;
@@ -49,6 +53,10 @@ img {
   font-size: 1.2rem;
   font-family: var(--body);
 }
+.card_description {
+  margin-top: 4px;
+  text-align: justify;
+}
 .card_title {
   text-align: center;
   font-size: 1.3rem;
@@ -61,7 +69,6 @@ img {
   object-fit: cover;
 }
 .card_content {
-  /* background: var(--lgtbrown); */
   align-self: end;
   margin: 0.5rem 0.5rem 0.5rem;
   padding: 0 0.5rem;
