@@ -179,7 +179,7 @@ nav {
   margin-left: 1.5vw;
 }
 
-#logo > p {
+#logo {
   font-family: var(--headers);
   font-size: 2.5vw;
   margin: 0px;
