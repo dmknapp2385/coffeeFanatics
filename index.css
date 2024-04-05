@@ -179,7 +179,7 @@ nav {
   margin-left: 1.5vw;
 }
 
-#logo > p {
+#logo {
   font-family: var(--headers);
   font-size: 2.5vw;
   margin: 0px;
@@ -205,6 +205,7 @@ h2 {
   font-size: 2rem;
   color: var(--brown);
   margin-bottom: 1rem;
+  letter-spacing: 1.5px;
 }
 h2 {
   font-size: 1.8rem;

@@ -6,22 +6,25 @@
   margin: 20px auto;
   padding: 3px;
   padding-left: 10px;
-  color: var(--brown);
+  color: var(--cream);
+  background-color: var(--brown);
   min-width: 88vw;
 }
 .container > div:first-child {
   position: sticky;
   top: 0;
   position: -webkit-sticky; /*for Safari*/
-  background-color: var(--burlywood);
+  background-color: var(--brown);
 }
-
+.container p {
+  color: var(--cream);
+}
 .container > div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
   gap: 12px;
   align-items: center;
-  border-bottom: 1px solid var(--brown);
+  border-bottom: 1px solid var(--burlywood);
   padding: 8px 0px;
 }
 .container > div > * {
@@ -34,6 +37,7 @@
 .container h2 {
   text-align: left;
   font-size: 1.8rem;
+  color: var(--burlywood);
 }
 
 .container span {
