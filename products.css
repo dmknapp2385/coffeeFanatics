@@ -60,7 +60,7 @@ img {
 .card_title {
   text-align: center;
   font-size: 1.3rem;
-  text-transform: uppercase;
+  font-style: oblique;
 }
 
 .card_image {
@@ -88,7 +88,7 @@ img {
   }
   .card.featured .card_title {
     font-size: 1.8rem;
-    font-style: bold;
+    font-weight: bold;
   }
 }
 
