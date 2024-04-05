@@ -205,6 +205,7 @@ h2 {
   font-size: 2rem;
   color: var(--brown);
   margin-bottom: 1rem;
+  letter-spacing: 1.5px;
 }
 h2 {
   font-size: 1.8rem;
