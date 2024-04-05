@@ -1,3 +1,5 @@
+window.document.addEventListener("DOMContentLoaded", printBrews)
+
 // global variables
 let brewArray = JSON.parse(localStorage.getItem("brews")) || [];
 
