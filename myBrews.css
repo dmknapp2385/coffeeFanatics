@@ -7,20 +7,24 @@
   padding: 3px;
   padding-left: 10px;
   color: var(--cream);
+  background-color: var(--brown);
   min-width: 88vw;
 }
 .container > div:first-child {
-  background-color: var(--brown);
   position: sticky;
   top: 0;
   position: -webkit-sticky; /*for Safari*/
+  background-color: var(--brown);
+}
+.container p {
+  color: var(--cream);
 }
 .container > div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
   gap: 12px;
   align-items: center;
-  border-bottom: 1px solid var(--cream);
+  border-bottom: 1px solid var(--burlywood);
   padding: 8px 0px;
 }
 .container > div > * {
@@ -32,7 +36,8 @@
 }
 .container h2 {
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  color: var(--burlywood);
 }
 
 .container span {
@@ -40,7 +45,7 @@
 }
 
 #form-btn {
-  border: 4px outset var(--tan);
+  border: 4px outset var(--brown);
   border-radius: 12px;
   padding: 10px;
   font-family: Comfortaa;
@@ -51,7 +56,7 @@
 }
 
 #form-btn:hover {
-  border: 3px inset var(--tan);
+  border: 3px inset var(--lgtbrown);
 }
 
 /* Pop up module styling */
@@ -69,7 +74,7 @@
 .textbox {
   border: 3px;
   width: 70vw;
-  background-color: var(--tan);
+  background-color: var(--lgtbrown);
   border-color: black;
   border-radius: 6px;
   margin: 3vh auto;
@@ -94,7 +99,7 @@ form > *:not(:nth-child(-n + 2)) {
 fieldset,
 #method {
   border: none;
-  color: var(--brown);
+  color: var(--cream);
 }
 #grind_div > label {
   display: block;
@@ -119,7 +124,7 @@ select,
 #method {
   border-radius: 8px;
   border-color: var(--lgtbrown);
-  background-color: var(--cream);
+  background-color: var(--burlywood);
   color: var(--brown);
   font-size: 1.3rem;
   padding: 3px;
@@ -148,7 +153,7 @@ input[type="checkbox"] + label {
 input[type="checkbox"] + label::before {
   display: inline-block;
   content: "\00a0";
-  background-color: var(--cream);
+  background-color: var(--brown);
   border: 2px solid var(--lgtbrown);
   width: 17px;
   height: 17px;
@@ -171,17 +176,20 @@ input[type="checkbox"]:checked + label::before {
   padding: 0.5em 1em;
   border: 0;
   border-radius: 0.5em;
-  background-color: var(--cream);
+  background-color: var(--brown);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   width: fit-content;
   align-self: flex-end;
-  color: var(--brown);
+  color: var(--cream);
   font-size: 1.3rem;
 }
 
 #add-btn {
   align-self: center;
+}
+#exit-btn {
+  margin-right: 4px;
 }
 
 #exit-btn:hover,
