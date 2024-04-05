@@ -5,6 +5,7 @@
   --cream: #fffdd0;
   --logo: "Comfortaa", "Gill Sans", "Gill Sans MT", sans-serif;
   --headers: "Rancho", sans-serif;
+  --body: Helvetica, Arial, sans-serif;
 }
 * {
   margin: 0;
@@ -182,7 +183,7 @@ nav {
   font-family: var(--headers);
   font-size: 2.5vw;
   margin: 0px;
-  border: 3px solid var(--tan);
+  border: 3px solid var(--lgtbrown);
   background-color: var(--cream);
   border-radius: 50%;
   padding: 10px;
@@ -202,25 +203,25 @@ h2 {
   text-align: center;
   font-family: var(--headers);
   font-size: 2rem;
-  color: var(--lgtbrown);
+  color: var(--brown);
   margin-bottom: 1rem;
 }
 h2 {
   font-size: 1.8rem;
-  color: var(--tan);
+  color: var(--lgtbrown);
 }
 
 p {
   font-size: 1.2rem;
   font-family: var(--body);
-  color: var(--tan);
+  color: var(--lgtbrown);
 }
 
 a {
   text-decoration: none;
 }
 footer {
-  height: 3rem;
+  height: 5rem;
   min-width: 100%;
   margin-top: auto;
   background-color: var(--lgtbrown);
