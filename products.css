@@ -1,3 +1,7 @@
+main h2 {
+  color: var(--lgtbrown);
+}
+
 #upButton {
   position: fixed;
   right: 10px;
@@ -20,7 +24,6 @@ img {
   max-width: 100%;
   border-radius: 5px;
 }
-
 
 .container {
   width: 89vw;
@@ -46,9 +49,13 @@ img {
 }
 .card_title,
 .card_description {
-  color: var(--cream);
+  color: var(--brown);
   font-size: 1.2rem;
   font-family: var(--body);
+}
+.card_description {
+  margin-top: 4px;
+  text-align: justify;
 }
 .card_title {
   text-align: center;
@@ -62,7 +69,6 @@ img {
   object-fit: cover;
 }
 .card_content {
-  /* background: var(--lgtbrown); */
   align-self: end;
   margin: 0.5rem 0.5rem 0.5rem;
   padding: 0 0.5rem;
