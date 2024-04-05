@@ -1,37 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoffeeFanatics</title>
-    <link href="index.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Rancho|Comfortaa"
-    />
-  </head>
-  <body>
-    <nav class="flex space-between">
-      <a id="logo" href="index.html"> <h1>CoffeeFanatics</h1> </a>
-      <div id="menu" class="flex row-wrap">
-        <a href="index.html">Home</a>
-        <a href="beans.html">Beans</a>
-        <div id="methodoligies">
-          Brewing Techniques
-          <ul hidden>
-            <li><a href="espresso.html">Espresso</a></li>
-            <li><a href="french.html">French Press</a></li>
-            <li><a href="pourOvers.html">Pour Overs</a></li>
-          </ul>
-        </div>
-        <a href="local.html">Local Cafes</a>
-        <a href="myBrews.html">My Brews</a>
-        <a href="products.html">Products</a>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>coffeefanatics</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="espresso.css"> <!-- This is the new stylesheet -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Rancho&family=Comfortaa">
+</head>
+
+<body>
+<nav class="flex space-between">
+    <a id="logo" href="index.html">
+      <p>CoffeeFanatics<p>
+    </a>
+    <div id="menu" class="flex row-wrap">
+      <a href="index.html">Home</a>
+      <a href="beans.html">Beans</a>
+      <div id="methodoligies">
+        <p class="dropdwn_title">Brew Techniques<span></span></p>
+        <div class="dropdwn_content">
+          <a href="espresso.html">Espresso</a>
+          <a href="french.html">French Press</a>
+          <a href="pourOvers.html">Pour Overs</a>
+        </div>
       </div>
-    </nav>
-    <main>body content here</main>
-    <footer>Footer goes here</footer>
-  </body>
-  <script src="main.js"></script>
+      <a href="local.html">Local Cafes</a>
+      <a href="myBrews.html">My Brews</a>
+      <a href="products.html">Products</a>
+
+    </div>
+</nav>
+<main>
+    <section class="intro">
+        <h2>Welcome to the World of Espresso</h2>
+        <p>Discover the art of espresso brewing, from the perfect shot to delicious espresso-based drinks.</p>
+    </section>
+    <section class="espresso-drinks">
+        <h2>Espresso-Based Drinks and Ratios</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Drink</th>
+                <th>Water</th>
+                <th>Coffee</th>
+                <th>Milk</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Espresso</td>
+                <td>1 part</td>
+                <td>1 part</td>
+                <td>0 part</td>
+            </tr>
+            <tr>
+                <td>Americano</td>
+                <td>2 parts</td>
+                <td>1 part</td>
+                <td>0 part</td>
+            </tr>
+            <tr>
+                <td>Cappuccino</td>
+                <td>1 part</td>
+                <td>1 part</td>
+                <td>2 parts</td>
+            </tr>
+            <tr>
+                <td>Latte</td>
+                <td>1 part</td>
+                <td>1 part</td>
+                <td>3 parts</td>
+            </tr>
+            <tr>
+                <td>Flat White</td>
+                <td>1 part</td>
+                <td>2 parts</td>
+                <td>2 parts</td>
+            </tr>
+            <tr>
+                <td>Macchiato</td>
+                <td>1 part</td>
+                <td>1 part</td>
+                <td>0.5 part</td>
+            </tr>
+            <tr>
+                <td>Mocha</td>
+                <td>1 part</td>
+                <td>1 part</td>
+                <td>2 parts (plus chocolate)</td>
+            </tr>
+            <tr>
+                <td>Cortado</td>
+                <td>1 part</td>
+                <td>1 part</td>
+                <td>1 part</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="video-tutorial">
+        <h2>The Espresso Guide For Beginners</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZuQu12vMQZM" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <section class="espresso-guide">
+        <h2>Espresso Recipe: Your Guide to the Perfect Shot</h2>
+        <p>Follow our detailed 6-step guide to master the art of espresso. Perfect for enthusiasts and seasoned baristas
+            alike, this guide ensures delicious results every time.</p>
+
+        <div class="flex-container">
+            <div class="needs">
+                <h3>What You'll Need</h3>
+                <ul>
+                    <li>An Espresso Grinder</li>
+                    <li>An Espresso Machine</li>
+                    <li>Espresso Puck Preparation Tools</li>
+                    <li>Scale</li>
+                    <li>Timer</li>
+                </ul>
+            </div>
+            <div class="factors">
+                <h3>Important Factors</h3>
+                <ul>
+                    <li><strong>Grind Size:</strong> A fine grind similar to confectionary sugar.</li>
+                    <li><strong>Espresso Brew Ratio:</strong> Varies from Ristretto (1:1) to Lungo (1:4).</li>
+                    <li><strong>Water Temperature:</strong> Adjust according to the roast level.</li>
+                    <li><strong>Water:</strong> The quality of your water is paramount.</li>
+                    <li><strong>Coffee:</strong> Use freshly roasted beans for optimal flavor.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="steps-container">
+            <div class="step">
+                <h4>Step 1: Measure and Grind</h4>
+                <p>Start your espresso journey by measuring 18 grams of freshly roasted coffee beans. Precision is key,
+                    so
+                    use a digital scale for accuracy. Next, grind your beans to a fine consistency, akin to table salt.
+                    The
+                    grind should not be too coarse, as this will lead to a fast and under-extracted shot, nor too fine,
+                    which can cause over-extraction and bitterness.</p>
+            </div>
+            <div class="step">
+                <h4>Step 2: Distribute and Tamp</h4>
+                <p>Transfer the ground coffee to your portafilter. Use a distributor or a simple technique like the
+                    Weiss
+                    Distribution Technique (WDT) to evenly distribute the grounds, eliminating any clumps and ensuring
+                    an
+                    even surface. Tamp with a firm, even pressure to create a level bed of coffee. Aim for about 30
+                    pounds
+                    of pressure - you're looking for a smooth, flat surface that will resist the pressurized water
+                    evenly
+                    during extraction.</p>
+            </div>
+            <div class="step">
+                <h4>Step 3: Preheat and Prime</h4>
+                <p>Before locking in the portafilter, run a blank shot through your espresso machine to preheat the
+                    group
+                    head and the cup you'll be using. This step is vital as it ensures your espresso is brewed
+                    consistently
+                    at the optimal temperature, preventing rapid cooling which can adversely affect flavor.</p>
+            </div>
+            <div class="step">
+                <h4>Step 4: Brew Your Espresso</h4>
+                <p>Lock the portafilter into the group head and start the brew cycle immediately to prevent the grounds
+                    from
+                    burning. Aim for a brew time of 25-30 seconds. As the espresso drips into your cup, you should see a
+                    steady, mouse tail-like stream without any sudden spurts or drips. If your machine allows, watch for
+                    a
+                    brew pressure around 9 bars.</p>
+            </div>
+            <div class="step">
+                <h4>Step 5: Analyze the Shot</h4>
+                <p>Observe the espresso as it brews. The first liquid should appear after about 5-10 seconds and should
+                    be
+                    dark, flowing into a lighter, golden crema. If the shot pours too quickly or too slowly, adjust your
+                    grind size accordingly for your next shot. Taste your espresso; it should have a balance of
+                    sweetness,
+                    acidity, and bitterness.</p>
+            </div>
+            <div class="step">
+                <h4>Step 6: Clean and Maintain</h4>
+                <p>After every shot, clean your machine to maintain its performance and the quality of your espresso.
+                    Rinse
+                    the group head, wipe the basket, and purge steam through the wand. Regular maintenance ensures
+                    longevity
+                    and the most flavorful espresso experience.</p>
+            </div>
+        </div>
+        <div class="detailed-info">
+            <p>For more detailed information on crafting the perfect espresso, <a
+                    href="https://coffeebros.com/pages/espresso-brew-guide" target="_blank" rel="noopener noreferrer">visit
+                this page</a>.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>Footer goes here</footer>
+</body>
+
 </html>

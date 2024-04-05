@@ -9,22 +9,34 @@
   color: var(--cream);
   min-width: 88vw;
 }
-
+.container > div:first-child {
+  background-color: var(--brown);
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky; /*for Safari*/
+}
 .container > div {
   display: grid;
-  grid-template-columns: repeat(5, 1fr) 2fr;
-  grid-template-rows: 1fr;
-  gap: 10px;
-}
-.container > * {
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  gap: 12px;
+  align-items: center;
   border-bottom: 1px solid var(--cream);
+  padding: 8px 0px;
 }
+.container > div > * {
+  font-size: 1.1rem;
+}
+
 .container li {
   list-style-type: none;
 }
 .container h2 {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.3rem;
+}
+
+.container span {
+  cursor: pointer;
 }
 
 #form-btn {
@@ -75,6 +87,10 @@ form {
   flex-direction: column;
 }
 
+form > *:not(:nth-child(-n + 2)) {
+  margin-top: 1.3rem;
+}
+
 fieldset,
 #method {
   border: none;
@@ -111,10 +127,6 @@ select,
 
 textarea {
   width: 98%;
-}
-
-fieldset:nth-child(3) > div {
-  margin-top: 6px;
 }
 
 input[type="number"] {
@@ -180,9 +192,14 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media only screen and (max-width: 700px) {
-  main {
-    overflow: hidden;
-  }
+  /* .container > div {
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 8px;
+  } */
   .textbox {
     position: absolute;
     left: 0px;

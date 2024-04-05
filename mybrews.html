@@ -1,135 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>coffeefnatics</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="myBrews.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Rancho|Comfortaa"
-    />
-  </head>
-  <body onload="printBrews()">
-    <nav class="flex space-between">
-      <a id="logo" href="index.html"> <h1>CoffeeFanatics</h1> </a>
-      <div id="menu" class="flex row-wrap">
-        <a href="index.html">Home</a>
-        <a href="beans.html">Beans</a>
-        <div id="methodoligies">
-          Brewing Techniques
-          <ul hidden>
-            <li><a href="espresso.html">Espresso</a></li>
-            <li><a href="french.html">French Press</a></li>
-            <li><a href="pourOvers.html">Pour Overs</a></li>
-          </ul>
-        </div>
-        <a href="local.html">Local Cafes</a>
-        <a href="addBrew.html">My Brews</a>
-        <a href="products.html">Products</a>
 
-      </div>
-    </nav>
-    <header>
-      <h1>My Favorite Brews</h1>
-    </header>
-    <main class="flex flex-column align-center">
-      <h2>Use this page to store your favoite coffee recipies</h2>
-      <button type="button" id="form-btn">add a new brew</button>
-      <div id="container" class="container">
-        <div>
-          <h2>Technique</h2>
-          <h2>Coffee</h2>
-          <h2>Water</h2>
-          <h2>Grind Size</h2>
-          <h2>Additions</h2>
-          <h2>Notes</h2>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>coffeefnatics</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="myBrews.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rancho&family=Comfortaa">
+  <script src="myBrews.js" defer></script>
+
+</head>
+
+<body onload="printBrews()">
+  <nav class="flex space-between">
+    <a id="logo" href="index.html">
+      <p>CoffeeFanatics</p>
+    </a>
+    <div id="menu" class="flex row-wrap">
+      <a href="index.html">Home</a>
+      <a href="beans.html">Beans</a>
+      <div id="methodoligies">
+        <p class="dropdwn_title">Brew Techniques<span></span></p>
+        <div class="dropdwn_content">
+          <a href="espresso.html">Espresso</a>
+          <a href="french.html">French Press</a>
+          <a href="pourOvers.html">Pour Overs</a>
         </div>
       </div>
-    </main>
-    <div hidden id="overlay">
-      <div class="textbox">
-        <form action="addBrew.js">
-          <button type="button" id="exit-btn">X</button>
-          <fieldset>
-            <legend>Method Used:</legend>
-            <select name="method" id="method">
-              <option value="French Press">French Press</option>
-              <option value="Chemex">Chemex</option>
-              <option value="Espresso">Espresso</option>
-              <option value="Other Pour Over">Other Pour Over</option>
-            </select>
-            <div hidden id="grind_div">
-              <label for="grind_size">Grind Size:</label>
-              <input type="number" name="grind_size" id="grind_size" />
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Coffee to Water Ratio:</legend>
-            <div class="media-ratio">
-              <label for="coffee">Coffee Grounds: </label>
-              <div>
-                <input type="number" name="coffee" id="coffee" />
-                <select name="units" id="cofUnits" class="units">
-                  <option></option>
-                  <option value="g">g</option>
-                  <option value="oz">oz</option>
-                  <option value="cups">cups</option>
-                </select>
-              </div>
-            </div>
-            <div class="media-ratio">
-              <label for="water">Water: </label>
-              <div>
-                <input type="number" name="water" id="water" />
-                <select name="units" id="waterUnits" class="units">
-                  <option></option>
-
-                  <option value="g">g</option>
-                  <option value="oz">oz</option>
-                  <option value="cups">cups</option>
-                </select>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="form-check">
-            <legend>Additions:</legend>
-            <div>
-              <input type="checkbox" name="additions" id="milk" value="milk" />
-              <label for="milk">Milk</label>
-              <input
-                type="checkbox"
-                name="additions"
-                id="cream"
-                value="cream"
-              />
-              <label for="cream">Cream</label>
-              <input
-                type="checkbox"
-                name="additions"
-                id="sugar"
-                value="sugar"
-              />
-              <label for="sugar">Sugar</label>
-              <input
-                type="checkbox"
-                name="additions"
-                id="flavoring"
-                value="flavoring"
-              />
-              <label for="flavoring">Flavoring</label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend for="notes">Other notes:</legend>
-            <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
-          </fieldset>
-          <input type="button" id="add-btn" value="add" />
-        </form>
+      <a href="local.html">Local Cafes</a>
+      <a href="addBrew.html">My Brews</a>
+      <a href="products.html">Products</a>
+    </div>
+  </nav>
+  <header>
+    <h1>My Favorite Brews</h1>
+  </header>
+  <main class="flex flex-column align-center">
+    <h2>Use this page to store your favoite coffee recipies</h2>
+    <button type="button" id="form-btn">add a new brew</button>
+    <div id="container" class="container">
+      <div>
+        <h2>Technique</h2>
+        <h2>Coffee</h2>
+        <h2>Water</h2>
+        <h2>Grind Size</h2>
+        <h2>Additions</h2>
+        <h2>Notes</h2>
       </div>
     </div>
-  </body>
-  <script src="myBrews.js"></script>
-  <script src="main.js"></script>
+  </main>
+  <div hidden id="overlay">
+    <div class="textbox">
+      <form action="addBrew.js">
+        <button type="button" id="exit-btn">X</button>
+        <fieldset>
+          <legend>Method Used:</legend>
+          <select name="method" id="method">
+            <option value="French Press">French Press</option>
+            <option value="Chemex">Chemex</option>
+            <option value="Espresso">Espresso</option>
+            <option value="Other Pour Over">Other Pour Over</option>
+          </select>
+          <div hidden id="grind_div">
+            <label for="grind_size">Grind Size:</label>
+            <input type="number" name="grind_size" id="grind_size">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Coffee to Water Ratio:</legend>
+          <div class="media-ratio">
+            <label for="coffee">Coffee Grounds: </label>
+            <div>
+              <input type="number" name="coffee" id="coffee">
+              <select name="units" id="cofUnits" class="units">
+                <option>--</option>
+                <option value="g">g</option>
+                <option value="oz">oz</option>
+                <option value="cups">cups</option>
+              </select>
+            </div>
+          </div>
+          <div class="media-ratio">
+            <label for="water">Water: </label>
+            <div>
+              <input type="number" name="water" id="water">
+              <select name="units" id="waterUnits" class="units">
+                <option>--</option>
+                <option value="g">g</option>
+                <option value="oz">oz</option>
+                <option value="cups">cups</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-check">
+          <legend>Additions:</legend>
+          <div>
+            <input type="checkbox" name="additions" id="milk" value="milk">
+            <label for="milk">Milk</label>
+            <input type="checkbox" name="additions" id="cream" value="cream">
+            <label for="cream">Cream</label>
+            <input type="checkbox" name="additions" id="sugar" value="sugar">
+            <label for="sugar">Sugar</label>
+            <input type="checkbox" name="additions" id="flavoring"
+              value="flavoring">
+            <label for="flavoring">Flavoring</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Other notes:</legend>
+          <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input type="button" id="add-btn" value="add">
+      </form>
+    </div>
+  </div>
+</body>
+
 </html>

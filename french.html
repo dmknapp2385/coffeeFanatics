@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoffeeFanatics</title>
-    <link href="index.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Rancho|Comfortaa"
-    />
-  </head>
-  <body>
-    <nav class="flex space-between">
-      <a id="logo" href="index.html"> <h1>CoffeeFanatics</h1> </a>
-      <div id="menu" class="flex row-wrap">
-        <a href="index.html">Home</a>
-        <a href="beans.html">Beans</a>
-        <div id="methodoligies">
-          Brewing Techniques
-          <ul hidden>
-            <li><a href="espresso.html">Espresso</a></li>
-            <li><a href="french.html">French Press</a></li>
-            <li><a href="pourOvers.html">Pour Overs</a></li>
-          </ul>
-        </div>
-        <a href="local.html">Local Cafes</a>
-        <a href="myBrews.html">My Brews</a>
-        <a href="products.html">Products</a>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>coffeefnatics</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rancho&family=Comfortaa">
+</head>
+
+<body>
+  <nav class="flex space-between">
+    <a id="logo" href="index.html">
+      <p>CoffeeFanatics<p>
+    </a>
+    <div id="menu" class="flex row-wrap">
+      <a href="index.html">Home</a>
+      <a href="beans.html">Beans</a>
+      <div id="methodoligies">
+        <p class="dropdwn_title">Brew Techniques<span></span></p>
+        <div class="dropdwn_content">
+          <a href="espresso.html">Espresso</a>
+          <a href="french.html">French Press</a>
+          <a href="pourOvers.html">Pour Overs</a>
+        </div>
       </div>
-    </nav>
-    <main>body content here</main>
-    <footer>Footer goes here</footer>
-  </body>
-  <script src="main.js"></script>
+      <a href="local.html">Local Cafes</a>
+      <a href="myBrews.html">My Brews</a>
+      <a href="products.html">Products</a>
+
+    </div>
+
+  </nav>
+
+  <!-- I'm using this document to plan content: https://docs.google.com/document/d/1M2bug0EIbZSLVzw2tWeTv6-jc5bjPDJGPRlEk7CWJbg/edit?usp=sharing -->
+  <main>
+
+    <h1>French Press</h1>
+
+    <h2 id="faq">What is a French Press, Anyway?</h2>
+    <!-- to do: embed image with appropriate width/height for desktop and mobile -->
+
+    <h2 id="materials">Materials Needed</h2>
+    <!-- to do: embed image with appropriate width/height for desktop and mobile -->
+
+    <h2 id="how-to">How to French Press</h2>
+    <video width="35%" height="auto"
+      source="https://youtu.be/w3A_Z1J78HY"></video>
+    <!-- iframe width="560" height="315" src="https://www.youtube.com/embed/w3A_Z1J78HY?si=ds6N6wJxgjpBmNJ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Before beginning to make a french press coffee, you will need a french press. If you don't have one already, there are links to purchase them at <a href="#purchase">the bottom of this page.</a></p>
+            <!-- to do: ordered list of steps listed in video -->
+    <ol>
+      <li>Example step 1</li>
+      <li>Ex step 2</li>
+      <li>Ex step 3</li>
+    </ol>
+
+    <h2 id="purchase">Where to Buy a French Press</h2>
+    <p>For the interested but unequipped coffee fanatic, here are some
+      highly-rated french presses!</p>
+    <ul>
+      <li><a
+          href="https://www.amazon.com/Mildhug-Cafetera-Prensa-Francesa-Inoxidable/dp/B092RVR7J5/ref=sr_1_2?dib=eyJ2IjoiMSJ9.Et-by-T4XsMPoNWtw4Dl8FCl9b1E9vzL_GfeuD2wNhyCidlTgcA9WMDXROhZluhI-i_Ptj7TD19ONxs7DBzhjyAavu5C1qHx8lYwhKPc72HsUNFJOxC8SphOHWN3qM7PFMuZrFAmVP5M5PeDHTzqhFW09w1Maj_26GyOt0eB-7vDRjh7h4_LMyOYgzEDTImlS_5CyVPRvuqo4Ch1gRALjD7uZxA4Icaxg2_0JRmNDZb8dLV5sBDwb8vHmi92jGPpo_RQJd6yeJ-P89j-NG5TjvI4xdohzSTAoI2P3UGrfzY.i1gHNKLFNfwX29CZIWXBI7-uZouGIE4Fv2atiUCD--4&dib_tag=se&keywords=french+press&qid=1709912578&sr=8-2">The
+          highest rated french press on Amazon</a></li>
+      <li><a
+          href="https://www.amazon.com/YMMIND-Resistant-Thickened-Borosilicate-Stainless/dp/B0CHTNNB4F/ref=sr_1_4?dib=eyJ2IjoiMSJ9.Et-by-T4XsMPoNWtw4Dl8FCl9b1E9vzL_GfeuD2wNhyCidlTgcA9WMDXROhZluhI-i_Ptj7TD19ONxs7DBzhjyAavu5C1qHx8lYwhKPc72HsUNFJOxC8SphOHWN3qM7PFMuZrFAmVP5M5PeDHTzqhFW09w1Maj_26GyOt0eB-7vDRjh7h4_LMyOYgzEDTImlS_5CyVPRvuqo4Ch1gRALjD7uZxA4Icaxg2_0JRmNDZb8dLV5sBDwb8vHmi92jGPpo_RQJd6yeJ-P89j-NG5TjvI4xdohzSTAoI2P3UGrfzY.i1gHNKLFNfwX29CZIWXBI7-uZouGIE4Fv2atiUCD--4&dib_tag=se&keywords=french+press&qid=1709912578&sr=8-4">Second
+          highest rated</a></li>
+      <li><a
+          href="https://www.amazon.com/Mueller-Insulated-Stainless-Filtration-Dishwasher/dp/B07JGBK6XV/ref=sr_1_5?dib=eyJ2IjoiMSJ9.Et-by-T4XsMPoNWtw4Dl8FCl9b1E9vzL_GfeuD2wNhyCidlTgcA9WMDXROhZluhI-i_Ptj7TD19ONxs7DBzhjyAavu5C1qHx8lYwhKPc72HsUNFJOxC8SphOHWN3qM7PFMuZrFAmVP5M5PeDHTzqhFW09w1Maj_26GyOt0eB-7vDRjh7h4_LMyOYgzEDTImlS_5CyVPRvuqo4Ch1gRALjD7uZxA4Icaxg2_0JRmNDZb8dLV5sBDwb8vHmi92jGPpo_RQJd6yeJ-P89j-NG5TjvI4xdohzSTAoI2P3UGrfzY.i1gHNKLFNfwX29CZIWXBI7-uZouGIE4Fv2atiUCD--4&dib_tag=se&keywords=french+press&qid=1709912578&sr=8-5">Third
+          highest rated</a></li>
+    </ul>
+  </main>
+  <footer>Footer goes here</footer>
+</body>
+
 </html>
