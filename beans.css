@@ -1,0 +1,32 @@
+img {
+    width: 800px;
+    height: 500px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    margin-left: 20px; /* Adjusted margin */
+    margin-bottom: 20px;
+    padding-right: 50px; /* Adjusted padding */
+    order: 2; /* Reversed order */
+}
+
+.text-container {
+    flex-wrap: wrap;
+    max-width: 500px;
+    font-size: 20px;
+    order: 1; /* Reversed order */
+}
+
+.text-container > span {
+    margin-bottom: 10px;
+    display: block;
+}
