@@ -1,3 +1,25 @@
+main h2 {
+  color: var(--lgtbrown);
+}
+
+#upButton {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--cream);
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+#upButton:hover {
+  box-shadow: 0px 0px 5px 5px white;
+  background-color: var(--body);
+  color: var(--cream);
+}
+
 img {
   max-width: 100%;
   border-radius: 5px;
@@ -27,14 +49,18 @@ img {
 }
 .card_title,
 .card_description {
-  color: var(--cream);
+  color: var(--brown);
   font-size: 1.2rem;
   font-family: var(--body);
+}
+.card_description {
+  margin-top: 4px;
+  text-align: justify;
 }
 .card_title {
   text-align: center;
   font-size: 1.3rem;
-  text-transform: uppercase;
+  font-style: oblique;
 }
 
 .card_image {
@@ -43,7 +69,6 @@ img {
   object-fit: cover;
 }
 .card_content {
-  /* background: var(--lgtbrown); */
   align-self: end;
   margin: 0.5rem 0.5rem 0.5rem;
   padding: 0 0.5rem;
@@ -63,7 +88,7 @@ img {
   }
   .card.featured .card_title {
     font-size: 1.8rem;
-    font-style: bold;
+    font-weight: bold;
   }
 }
 

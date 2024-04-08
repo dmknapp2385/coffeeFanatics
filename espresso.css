@@ -1,0 +1,188 @@
+/* espresso.css */
+
+:root {
+    --espresso-dark: #3B2C29; /* a dark brown */
+    --espresso-light: #C5A77E; /* a light cream */
+    --espresso-accent: #6E5849; /* a muted brown */
+    --espresso-text: #FFF8F0; /* Off-white */
+    --espresso-border: #665544; /* a darker shade for borders */
+    --espresso-row: #5C4033; /* Slightly lighter shade for alternating rows */
+}
+
+/* Espresso drinks table styling */
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: var(--espresso-dark);
+    color: var(--espresso-text);
+}
+
+th, td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid var(--espresso-light);
+}
+
+th {
+    background-color: var(--espresso-accent);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--espresso-dark);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--espresso-row); /* A lighter background for zebra striping */
+}
+
+
+/* Section styling */
+section {
+    margin: 20px 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.intro {
+    background-color: var(--espresso-dark);
+    color: var(--espresso-text);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.espresso-drinks {
+    background-color: var(--espresso-dark);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.espresso-guide {
+    background-color: var(--espresso-dark);
+    color: var(--espresso-light);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; /* Stack flex items vertically */
+}
+
+.espresso-guide h3,
+.espresso-guide h4 {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--espresso-light);
+}
+
+/* Adjust paragraph styling for better readability */
+.espresso-guide p {
+    margin-top: 1rem;
+}
+
+.espresso-guide ul {
+    list-style: disc inside;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+.espresso-guide li {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.needs ul,
+.factors ul {
+    list-style-type: none; /* Removes default list style */
+    padding: 0;
+}
+
+.needs li::before,
+.factors li::before {
+    content: '•'; /* Adds a custom bullet point */
+    color: var(--espresso-light); /* Bullet point color */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.flex-container, .steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Gap between flex items for spacing */
+}
+
+/* Individual columns for 'What You'll Need' and 'Important Factors' */
+.needs, .factors {
+    flex: 1; /* Each flex item will take equal space */
+    padding: 15px;
+    background-color: var(--espresso-row); /* Different background for distinction */
+    border-radius: 5px;
+    margin-top: 20px
+}
+
+.step {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: var(--espresso-accent); /* Slightly different background for steps */
+    color: var(--espresso-text);
+    border-radius: 5px;
+}
+
+/* Create a container for steps that will be side by side */
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detailed-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.detailed-info a {
+    color: var(--espresso-light);
+}
+
+.detailed-info a:hover {
+    text-decoration: underline;
+    color: var(--espresso-text);
+}
+
+.video-tutorial {
+    padding: 20px 0;
+}
+
+.video-tutorial iframe {
+    width: 100%;
+    max-width: 1120px;
+    height: 630px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .flex-container, .steps-container {
+        flex-direction: column;
+    }
+
+    .flex-container .needs,
+    .flex-container .factors,
+    .steps-container .step {
+        flex-basis: 100%;
+    }
+
+    .steps-container .step {
+        margin-top: 1rem;
+    }
+
+    .video-tutorial iframe {
+        height: auto; /* Adjusts height based on width */
+    }
+
+    section {
+        padding: 15px;
+    }
+}
