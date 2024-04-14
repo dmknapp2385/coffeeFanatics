@@ -16,6 +16,9 @@
   position: -webkit-sticky; /*for Safari*/
   background-color: var(--brown);
 }
+.container > div:last-child {
+  border: none;
+}
 .container p {
   color: var(--cream);
 }

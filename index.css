@@ -72,10 +72,52 @@
 }
 
 /* About section */
+#beanImage {
+  float: left;
+  margin-right: 20px;
+  padding: 25px;
+  width: 600px;
+  height: auto;
+}
+#about-paragraph {
+  font-size: 24px;
+}
 
+#h1-about {
+  font-size: 32px; /* Adjust the font size for h1 */
+}
+
+/* Mission Section */
+#machineImage {
+  float: left;
+  margin-right: 20px;
+  padding: 25px;
+  width: 600px;
+  height: auto;
+}
 /* Carousel */
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 75vh;
+  overflow: hidden;
+  padding: 25px;
+}
 
-/* body section */
+.carousel-item:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.3);
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
 
 body {
   display: flex;
@@ -84,12 +126,17 @@ body {
   background-color: var(--burlywood);
 }
 
+a:hover {
+  font-weight: bolder;
+}
+
 /* Nav styling */
 nav {
-  margin-bottom: 15px;
   padding: 10px 5px;
   width: 100%;
+  border-bottom: solid 1px rgb(17, 9, 7, 0.5);
 }
+
 #menu {
   flex-basis: 85%;
   justify-content: flex-end;
@@ -207,15 +254,23 @@ h2 {
   margin-bottom: 1rem;
   letter-spacing: 1.5px;
 }
+
+header {
+  padding-top: 10px;
+}
+main {
+  padding-top: 15px;
+}
 h2 {
   font-size: 1.8rem;
   color: var(--lgtbrown);
 }
 
-p {
+p,
+li {
   font-size: 1.2rem;
   font-family: var(--body);
-  color: var(--lgtbrown);
+  color: var(--brown);
 }
 
 a {
