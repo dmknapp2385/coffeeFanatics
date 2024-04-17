@@ -99,7 +99,7 @@
 .carousel-item img {
   object-fit: cover;
   object-position: center;
-  height: 75vh;
+  height: 80vh;
   overflow: hidden;
   padding: 25px;
 }
