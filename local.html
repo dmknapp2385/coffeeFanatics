@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Coffee tips for beginner to advanced. Espresso, pour over, chemex, french press, coffee beans"
+    />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>coffeefnatics</title>
     <link rel="stylesheet" href="index.css" />
@@ -10,15 +14,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Rancho&family=Comfortaa"
     />
+    <script src="myBrews.js" defer></script>
   </head>
 
   <body>
     <nav class="flex space-between">
-      <a id="logo" href="index.html">
-        <p>CoffeeFanatics</p>
-        <p></p
-      ></a>
-
+      <a id="logo" href="index.html">CoffeeFanatics </a>
       <div id="menu" class="flex row-wrap">
         <a href="index.html">Home</a>
         <a href="beans.html">Beans</a>
@@ -30,6 +31,9 @@
             <a href="pourOvers.html">Pour Overs</a>
           </div>
         </div>
+        <a href="local.html">Local Cafes</a>
+        <a href="myBrews.html">My Brews</a>
+        <a href="products.html">Products</a>
       </div>
     </nav>
 
@@ -60,7 +64,7 @@
           <img src="images/local2.jpg" alt="Roadrunner Coffee shop image" />
         </div>
         <div class="text-container">
-          <h2>Roadrunner Coffee</h2>
+          <h1>Roadrunner Coffee</h1>
           <p>
             Roadrunner Coffee Co. has been a locally owned business in Tucson
             since 2004. Hand crafted espresso and coffee drinks. Their
@@ -83,7 +87,7 @@
           <img src="images/local3.jpg" alt="Brewed Awakening shop image" />
         </div>
         <div class="text-container">
-          <h2>Brewed Awakening</h2>
+          <h1>Brewed Awakening</h1>
           <p>
             A gathering place where coffee lovers can connect and enjoy
             spotlessly clean surroundings. Brewed Awakening sources its coffee
@@ -105,7 +109,7 @@
         </div>
 
         <div class="text-container">
-          <h2>Filthy Pirate Coffee</h2>
+          <h1>Filthy Pirate Coffee</h1>
           <p>
             A veteran-owned, family-operated coffee shop that takes pride in its
             locally-roasted flavored coffee, cold brew, K-cups, and tea. Their
@@ -130,7 +134,7 @@
         </div>
 
         <div class="text-container">
-          <h2>Crave Coffee Bar</h2>
+          <h1>Crave Coffee Bar</h1>
           <p>
             Crave Coffee Bar has become a favorite hangout for coffee
             connoisseurs, poets, writers, or anyone who enjoys a great beverage.
@@ -152,7 +156,7 @@
           <img src="images/local6.jpg" alt="Calle Coffee shop image" />
         </div>
         <div class="text-container">
-          <h2>Calle Coffee</h2>
+          <h1>Calle Coffee</h1>
           <p>
             Calle Coffee is a family-owned business. They specialize in mobile
             coffee and have garnered a positive reputation among locals. With a
@@ -172,7 +176,7 @@
           <img src="images/local7.jpg" alt="Sky Island Roasters shop image" />
         </div>
         <div class="text-container">
-          <h2>Sky Island Roasters</h2>
+          <h1>Sky Island Roasters</h1>
           <p>
             Focus on sourcing high-quality coffee beans from around the world
             and roasting them to perfection to bring out the unique flavors and
@@ -193,7 +197,7 @@
           <img src="images/local8.avif" alt="Way of the Bean shop image" />
         </div>
         <div class="text-container">
-          <h2>Way of Bean Coffee Club</h2>
+          <h1>Way of Bean Coffee Club</h1>
           <p>
             This unique coffee spot operates as a private membership-based
             coffee club. Your membership allows you to enjoy a free and
@@ -204,11 +208,11 @@
           <p><b>Phone:</b> (520) 896-9846</p>
           <span>&#x2705; Membership</span>
           <span>&#x2705; Takeout</span>
-          
         </div>
       </div>
+      <button id="myBtn" title="Go to top">&uarr;</button>
     </main>
     <footer>Footer goes here</footer>
+    <script src="local.js"></script>
   </body>
-  <script src="main.js"></script>
 </html>
