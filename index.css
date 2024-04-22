@@ -72,10 +72,52 @@
 }
 
 /* About section */
+#beanImage {
+  float: left;
+  margin-right: 20px;
+  padding: 25px;
+  width: 600px;
+  height: auto;
+}
+#about-paragraph {
+  font-size: 24px;
+}
 
+#h1-about {
+  font-size: 32px; /* Adjust the font size for h1 */
+}
+
+/* Mission Section */
+#machineImage {
+  float: left;
+  margin-right: 20px;
+  padding: 25px;
+  width: 600px;
+  height: auto;
+}
 /* Carousel */
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 80vh;
+  overflow: hidden;
+  padding: 25px;
+}
 
-/* body section */
+.carousel-item:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.3);
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
 
 body {
   display: flex;
@@ -228,7 +270,7 @@ p,
 li {
   font-size: 1.2rem;
   font-family: var(--body);
-  color: var(--lgtbrown);
+  color: var(--brown);
 }
 
 a {
