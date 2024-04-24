@@ -53,7 +53,7 @@ td {
 .table-description {
   margin-bottom: 20px; /* Spacing before the table */
   padding: 0 15px; /* Padding on the sides for readability */
-  text-align: justify; /* For a clean, justified paragraph look */
+  text-align: center; /* For a clean, justified paragraph look */
   color: var(--espresso-dark); /* Using your defined dark color for text */
   background-color: var(--espresso-light); /* Soft background color for the paragraph */
   border-left: 4px solid var(--espresso-accent); /* An accent line to distinguish the section */
