@@ -50,6 +50,17 @@ td {
   border-bottom: 1px solid var(--espresso-dark); /* Dark brown border between rows */
 }
 
+.table-description {
+  margin-bottom: 20px; /* Spacing before the table */
+  padding: 0 15px; /* Padding on the sides for readability */
+  text-align: justify; /* For a clean, justified paragraph look */
+  color: var(--espresso-dark); /* Using your defined dark color for text */
+  background-color: var(--espresso-light); /* Soft background color for the paragraph */
+  border-left: 4px solid var(--espresso-accent); /* An accent line to distinguish the section */
+  border-right: 4px solid var(--espresso-accent);
+  line-height: 1.6; /* Line height for better readability */
+}
+
 /* Section styling */
 section {
   margin: 20px 20px;
@@ -228,5 +239,10 @@ section {
 
   section {
     padding: 15px;
+  }
+  .table-description {
+    padding: 0 10px; /* Smaller padding for mobile */
+    border-left: 3px solid var(--espresso-accent); /* Slightly thinner line for smaller screens */
+    border-right: 3px solid var(--espresso-accent); /* Slightly thinner line for smaller screens */
   }
 }
