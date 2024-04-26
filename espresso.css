@@ -1,226 +1,248 @@
 /* espresso.css */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Rancho&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Rancho&display=swap");
 
 :root {
-    --espresso-dark: #2c1712; /* Rich dark brown */
-    --espresso-light: #deb887; /* Lighter brown, akin to burlywood for a softer background */
-    --espresso-accent: #683c2b; /* Soft accent brown */
-    --espresso-text: #fffdd0; /* Cream color for text for better contrast against dark backgrounds */
-    --espresso-border: #665544; /* A darker shade for borders, matching the dark brown */
-    --espresso-row: #a67c52; /* A mid-tone brown for alternating rows or lighter sections */
+  --espresso-dark: #2c1712; /* Rich dark brown */
+  --espresso-light: #deb887; /* Lighter brown, akin to burlywood for a softer background */
+  --espresso-accent: #683c2b; /* Soft accent brown */
+  --espresso-text: #fffdd0; /* Cream color for text for better contrast against dark backgrounds */
+  --espresso-border: #665544; /* A darker shade for borders, matching the dark brown */
+  --espresso-row: #a67c52; /* A mid-tone brown for alternating rows or lighter sections */
 }
 
 /* Espresso drinks table styling */
 table {
-    width: 55%; /* Full width for better layout, adjust as needed */
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: var(--espresso-dark); /* Dark brown background for the table */
-    border: 2px solid var(--espresso-dark); /* Dark brown border for the table */
+  width: 55%; /* Full width for better layout, adjust as needed */
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: var(
+    --espresso-dark
+  ); /* Dark brown background for the table */
+  border: 2px solid var(--espresso-dark); /* Dark brown border for the table */
 }
 
 thead {
-    background-color: var(--espresso-accent); /* Slightly lighter brown for the table header */
+  background-color: var(
+    --espresso-accent
+  ); /* Slightly lighter brown for the table header */
 }
 
 th {
-    text-align: center;
-    padding: 12px;
-    color: var(--espresso-text); /* Cream text for better readability */
-    border-bottom: 1px solid var(--espresso-dark); /* Dark brown bottom border for header cells */
+  text-align: center;
+  padding: 12px;
+  color: var(--espresso-text); /* Cream text for better readability */
+  border-bottom: 1px solid var(--espresso-dark); /* Dark brown bottom border for header cells */
 }
 
 tbody tr:nth-child(odd) {
-    background-color: var(--espresso-row); /* Mid-tone brown for odd rows */
+  background-color: var(--espresso-row); /* Mid-tone brown for odd rows */
 }
 
 tbody tr:nth-child(even) {
-    background-color: var(--espresso-accent); /* Slightly lighter brown for even rows */
+  background-color: var(
+    --espresso-accent
+  ); /* Slightly lighter brown for even rows */
 }
 
 td {
-    padding: 12px;
-    color: var(--espresso-text); /* Cream text for cells */
-    border-bottom: 1px solid var(--espresso-dark); /* Dark brown border between rows */
+  padding: 12px;
+  color: var(--espresso-text); /* Cream text for cells */
+  border-bottom: 1px solid var(--espresso-dark); /* Dark brown border between rows */
 }
 
+.table-description {
+  margin-bottom: 20px; /* Spacing before the table */
+  padding: 0 15px; /* Padding on the sides for readability */
+  text-align: center; /* For a clean, justified paragraph look */
+  color: var(--espresso-dark); /* Using your defined dark color for text */
+  background-color: var(--espresso-light); /* Soft background color for the paragraph */
+  border-left: 4px solid var(--espresso-accent); /* An accent line to distinguish the section */
+  border-right: 4px solid var(--espresso-accent);
+  line-height: 1.6; /* Line height for better readability */
+}
 
 /* Section styling */
 section {
-    margin: 20px 20px;
-    padding: 10px;
-    text-align: center;
+  margin: 20px 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 /* Introduction section */
 .intro {
-    background-color: var(--espresso-light);
-    color: var(--espresso-dark);
-    padding: 15px;
-    border-radius: 5px;
+  background-color: var(--espresso-light);
+  color: var(--espresso-dark);
+  padding: 15px;
+  border-radius: 5px;
 }
 
 /* Espresso drinks section */
 .espresso-drinks {
-    background-color: var(--espresso-light);
-    padding: 15px;
-    border-radius: 5px;
+  background-color: var(--espresso-light);
+  padding: 15px;
+  border-radius: 5px;
 }
 
 /* Espresso guide section */
 .espresso-guide {
-    background-color: var(--espresso-light);
-    color: var(--espresso-dark);
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column; /* Stack flex items vertically */
+  background-color: var(--espresso-light);
+  color: var(--espresso-dark);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column; /* Stack flex items vertically */
 }
 
 /* Heading styles */
 .espresso-guide h3,
 .espresso-guide h4 {
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--espresso-accent); /* Accent color for heading underline */
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--espresso-accent); /* Accent color for heading underline */
 }
 
 /* Adjust paragraph styling for better readability */
 .espresso-guide p {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .espresso-guide ul {
-    list-style: disc inside;
-    margin: 1rem 0;
-    padding-left: 1rem;
+  list-style: disc inside;
+  margin: 1rem 0;
+  padding-left: 1rem;
 }
 
 .espresso-guide li {
-    margin-bottom: 0.5rem;
-    text-align: center;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* List styles */
 .needs ul,
 .factors ul {
-    list-style-type: none; /* Removes default list style */
-    padding: 0;
-    color: var(--espresso-text); /* Cream color for text */
+  list-style-type: none; /* Removes default list style */
+  padding: 0;
+  color: var(--espresso-text); /* Cream color for text */
 }
 
 .needs li,
 .factors li {
-    color: var(--espresso-light); /* Ensuring text is visible */
+  color: var(--espresso-light); /* Ensuring text is visible */
 }
 
 .needs li::before,
 .factors li::before {
-    content: '•'; /* Adds a custom bullet point */
-    color: var(--espresso-text); /* Bullet point color for contrast */
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+  content: "•"; /* Adds a custom bullet point */
+  color: var(--espresso-text); /* Bullet point color for contrast */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 /* Flex container styles */
 .flex-container,
 .steps-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /* Columns for 'What You'll Need' and 'Important Factors' */
 .needs,
 .factors {
-    flex: 1;
-    padding: 15px;
-    background-color: var(--espresso-accent); /* Soft accent brown for distinction */
-    color: var(--espresso-text); /* Cream color for text */
-    border-radius: 5px;
-    margin-top: 20px;
+  flex: 1;
+  padding: 15px;
+  background-color: var(
+    --espresso-accent
+  ); /* Soft accent brown for distinction */
+  color: var(--espresso-text); /* Cream color for text */
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 /* Steps styling */
 .step {
-    flex: 1;
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: var(--espresso-accent);
-    color: var(--espresso-text);
-    border-radius: 5px;
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: var(--espresso-accent);
+  color: var(--espresso-text);
+  border-radius: 5px;
 }
 
 .step h4 {
-    color: var(--espresso-text); /* Cream color for heading text */
+  color: var(--espresso-text); /* Cream color for heading text */
 }
 
 /* Paragraphs within steps */
 .step p {
-    color: var(--espresso-light); /* Cream color for paragraph text */
+  color: var(--espresso-light); /* Cream color for paragraph text */
 }
 
 /* Steps container */
 .steps-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Detailed info link styling */
 .detailed-info {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .detailed-info a {
-    color: var(--espresso-dark);
-    text-decoration: none; /* Remove underline for a cleaner look */
+  color: var(--lgtbrown);
+  text-decoration: none; /* Remove underline for a cleaner look */
 }
 
 .detailed-info a:hover {
-    text-decoration: underline;
-    color: var(--espresso-accent); /* Hover state color */
+  text-decoration: underline;
+  color: var(--espresso-accent); /* Hover state color */
 }
 
 /* Video tutorial styling */
 .video-tutorial {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .video-tutorial iframe {
-    width: 100%;
-    max-width: 1120px;
-    height: 630px;
+  width: 100%;
+  max-width: 1120px;
+  height: 630px;
 }
 
 /* Responsive styling */
 @media screen and (max-width: 768px) {
-    .flex-container,
-    .steps-container {
-        flex-direction: column;
-    }
+  .flex-container,
+  .steps-container {
+    flex-direction: column;
+  }
 
-    .flex-container .needs,
-    .flex-container .factors,
-    .steps-container .step {
-        flex-basis: 100%;
-    }
+  .flex-container .needs,
+  .flex-container .factors,
+  .steps-container .step {
+    flex-basis: 100%;
+  }
 
-    .steps-container .step {
-        margin-top: 1rem;
-    }
+  .steps-container .step {
+    margin-top: 1rem;
+  }
 
-    .video-tutorial iframe {
-        height: auto;
-    }
+  .video-tutorial iframe {
+    height: auto;
+  }
 
-    section {
-        padding: 15px;
-    }
+  section {
+    padding: 15px;
+  }
+  .table-description {
+    padding: 0 10px; /* Smaller padding for mobile */
+    border-left: 3px solid var(--espresso-accent); /* Slightly thinner line for smaller screens */
+    border-right: 3px solid var(--espresso-accent); /* Slightly thinner line for smaller screens */
+  }
 }
