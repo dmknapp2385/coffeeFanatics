@@ -17,7 +17,7 @@
 
 footer {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--cream);
   font-family: var(--headers);
   padding-top: 1rem;
@@ -70,6 +70,10 @@ footer {
 
 .row-wrap {
   flex-wrap: wrap;
+}
+
+.block {
+  display: block;
 }
 
 /* Generalized website styling */
@@ -143,6 +147,8 @@ body {
   background-color: var(--burlywood);
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 a:hover {
@@ -287,38 +293,54 @@ h2 {
 header {
   padding-top: 10px;
 }
+
 main {
   padding-top: 15px;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
 }
 
-ol {
-  list-style-type: upper-roman;
-}
-
-ul {
-  list-style-type: square;
-}
-
 p {
-  font-size: 1.2rem;
-  font-family: var(--body);
+  font-size: 1.5rem;
+  font-family: var(--logo);
   color: var(--brown);
+  text-align: center;
+}
+
+.bodyimage p {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+ul, ol {
+  list-style-type: none;
 }
 
 li {
-  font-size: 1.2rem;
-  font-family: var(--body);
-  color: var(--brown);
-  display: list-item;
+
+	/*text-align: left;*/
+	font-size: 1.7rem;
+	font-family: var(--logo);
+	color: var(--brown);
+	display: list-item;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
 }
+
 
 a {
   text-decoration: none;
 }
 
 /* Section styling */
+
+#instructions {
+	margin-top: 1.5rem;
+	padding: 0.6rem;
+	width: 75%;
+	text-align: left;
+	border: solid var(--brown) 2px;
+}
 
 /* Image on hover */
 .bodyimage figure {
