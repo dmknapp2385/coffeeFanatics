@@ -28,6 +28,17 @@ footer {
   background-color: var(--lgtbrown);
 }
 
+.social-link {
+  padding: 0.07rem; /* makes link easier to click */
+  color: var(--burlywood);
+}
+
+.social-link:hover {
+  color: var(--cream);
+}
+
+/* END FOOTER STYLING: FOR ALL PAGES */
+
 /* TO DO: IMPLEMENT FOOTER HOVER COLORS */
 
 /* Generalized stypes for positioning */
