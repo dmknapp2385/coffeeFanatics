@@ -1,0 +1,47 @@
+.reverse {
+  flex-direction: row-reverse;
+}
+
+img {
+  width: 30%;
+  height: auto;
+}
+
+.content_div {
+  margin: 1.3vw;
+}
+
+.content {
+  padding: 15px;
+}
+
+#how-to {
+  margin-top: 40px;
+}
+
+iframe {
+  border: 0px;
+  margin: auto;
+}
+
+#materials {
+  padding: 20px;
+}
+#materials > li {
+  list-style-type: disc;
+}
+
+a {
+  color: var(--lgtbrown);
+}
+
+li > a {
+  text-decoration: underline;
+}
+
+#steps {
+  margin: 20px;
+}
+#steps > li {
+  line-height: 1.8rem;
+}

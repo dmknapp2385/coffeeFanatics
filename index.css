@@ -290,6 +290,9 @@ li {
 a {
   text-decoration: none;
 }
+
+/* footer styling  */
+
 footer {
   height: 7rem;
   min-width: 100%;
@@ -297,7 +300,10 @@ footer {
   background-color: var(--lgtbrown);
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
+}
+
+.footer-nav {
+  padding-right: 25px;
 }
 
 .contact {
