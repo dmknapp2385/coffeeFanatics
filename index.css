@@ -276,8 +276,28 @@ a {
   text-decoration: none;
 }
 footer {
-  height: 5rem;
+  height: 7rem;
   min-width: 100%;
   margin-top: auto;
   background-color: var(--lgtbrown);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.contact {
+  margin: 0vw 2.5vw;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  line-height: 1.4rem;
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--cream);
+}
+
+.footerp > p {
+  font-size: small;
+  text-align: center;
 }

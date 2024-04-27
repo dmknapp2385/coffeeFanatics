@@ -69,6 +69,7 @@
 
 #form-btn:hover {
   border: 3px inset var(--lgtbrown);
+  cursor: pointer;
 }
 
 /* Pop up module styling */
