@@ -13,6 +13,23 @@
   box-sizing: border-box;
 }
 
+/*FOOTER STYLING: FOR ALL PAGES */
+
+footer {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--cream);
+  font-family: var(--headers);
+  padding-top: 1rem;
+  height: 5rem;
+  min-width: 100%;
+  margin-top: auto;
+  display: block;
+  background-color: var(--lgtbrown);
+}
+
+/* TO DO: IMPLEMENT FOOTER HOVER COLORS */
+
 /* Generalized stypes for positioning */
 
 .flex {
@@ -124,6 +141,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--burlywood);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 a:hover {
@@ -243,7 +262,7 @@ nav {
 main {
   display: flex;
   flex-direction: column;
-  margin: 0.3px auto;
+  margin: 0px auto;
 }
 
 h1 {
@@ -270,6 +289,8 @@ header {
 }
 main {
   padding-top: 15px;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 
 ol {
@@ -277,25 +298,39 @@ ol {
 }
 
 ul {
-  text-align: center;
   list-style-type: square;
 }
 
-p, li {
+p {
   font-size: 1.2rem;
   font-family: var(--body);
   color: var(--brown);
 }
 
+li {
+  font-size: 1.2rem;
+  font-family: var(--body);
+  color: var(--brown);
+  display: list-item;
+}
+
 a {
   text-decoration: none;
 }
-footer {
-  height: 5rem;
-  min-width: 100%;
-  margin-top: auto;
-  background-color: var(--lgtbrown);
-}
 
 /* Section styling */
+
+/* Image on hover */
+.bodyimage figure {
+  background-color: var(--burlywood);
+}
+
+.bodyimage figure img {
+  opacity: 1;
+  transition: .3s ease-in-out;
+  /*display: block;*/
+}
+.bodyimage figure:hover img {
+	opacity: .7;
+}
 
