@@ -27,14 +27,16 @@ li {
   color: var(--brown);
   margin: 25px 50px;
 }
-
-div {
-  padding-bottom: 20px;
+.content {
+  padding-bottom: 25px;
 }
-
 div > p {
   color: var(--brown);
   padding-left: 30px;
   padding-right: 30px;
   text-indent: 20px;
+}
+
+a {
+  color: var(--lgtbrown);
 }

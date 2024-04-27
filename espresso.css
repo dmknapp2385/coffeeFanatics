@@ -55,7 +55,9 @@ td {
   padding: 0 15px; /* Padding on the sides for readability */
   text-align: center; /* For a clean, justified paragraph look */
   color: var(--espresso-dark); /* Using your defined dark color for text */
-  background-color: var(--espresso-light); /* Soft background color for the paragraph */
+  background-color: var(
+    --espresso-light
+  ); /* Soft background color for the paragraph */
   border-left: 4px solid var(--espresso-accent); /* An accent line to distinguish the section */
   border-right: 4px solid var(--espresso-accent);
   line-height: 1.6; /* Line height for better readability */
@@ -214,6 +216,7 @@ section {
   width: 100%;
   max-width: 1120px;
   height: 630px;
+  border: 0px;
 }
 
 /* Responsive styling */

@@ -1,5 +1,14 @@
 /* Main page layout */
-
+.description {
+  margin: 0px 45px;
+  margin-bottom: 20px; /* Spacing before the table */
+  padding: 0 15px; /* Padding on the sides for readability */
+  text-align: center; /* For a clean, justified paragraph look */
+  border-left: 4px solid var(--brown); /* An accent line to distinguish the section */
+  border-right: 4px solid var(--brown);
+  line-height: 1.6; /* Line height for better readability */
+  font-size: 1.1rem;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -60,6 +69,7 @@
 
 #form-btn:hover {
   border: 3px inset var(--lgtbrown);
+  cursor: pointer;
 }
 
 /* Pop up module styling */
