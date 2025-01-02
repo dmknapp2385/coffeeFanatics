@@ -23,10 +23,10 @@ Clone the repository. Start the main index.html in the browser. Follow links fro
 
 ## Credits
 
-[Elle Knapp](https://github.com/dmknapp2385)
-[Randall Candaso](https://github.com/randallcandaso)
-[Rasulov Khondamir](https://github.com/khondamir-rasulov)
-[Elain Waddle](https://github.com/elaindle)
-[Dylan Coles](https://github.com/Dycoles)
-[Khang Tran](https://github.com/khangmtran)
-[Seti Valencia](https://github.com/setiv)
+- [Elle Knapp](https://github.com/dmknapp2385)
+- [Randall Candaso](https://github.com/randallcandaso)
+- [Rasulov Khondamir](https://github.com/khondamir-rasulov)
+- [Elain Waddle](https://github.com/elaindle)
+- [Dylan Coles](https://github.com/Dycoles)
+- [Khang Tran](https://github.com/khangmtran)
+- [Seti Valencia](https://github.com/setiv)
